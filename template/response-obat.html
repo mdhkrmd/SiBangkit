@@ -1,0 +1,38 @@
+<h3>{{numrows}} Records Found</h3>
+<table class="table table-striped custab">
+  <thead>
+      <tr>
+         <th>Nama Obat</th>
+         <th>Kategori</th>
+         <th>Deskripsi</th>
+         <th>Indikasi Umum</th>
+         <th>Dosis</th>
+         <th>Harga</th>
+         <th>Rating</th>
+      </tr>
+  </thead>
+  <tbody>
+{% for row in employee %}  
+   <tr>
+      <td>{{row.nama_obat}}</td>
+      <td>{{row.kategori}}</td>
+      <td>{{row.deskripsi}}</td>
+      <td>{{row.indikasi_umum}}</td>
+      <td>{{row.dosis}}</td>
+      <td>{{row.harga}}</td>
+      <td>{{row.rating}}</td>
+   </tr>
+{% endfor %} 
+  </tbody>
+  <tfoot>
+      <tr>
+         <th>Nama Obat</th>
+         <th>Kategori</th>
+         <th>Deskripsi</th>
+         <th>Indikasi Umum</th>
+         <th>Dosis</th>
+         <th>Harga</th>
+         <th>Rating</th>
+      </tr>
+  </tfoot>
+</table>

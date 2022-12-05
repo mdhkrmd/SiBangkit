@@ -1,0 +1,1299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>SiBangkit</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Varela+Round">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+  <!-- Favicons -->
+<!--   <link href={{ url_for('static', filename='/img/favicon.png') }} rel="icon">
+  <link href={{ url_for('static', filename='/img/apple-touch-icon.png') }} rel="apple-touch-icon"> -->
+  <link rel="icon" href={{ url_for('static', filename='/logo/icon-title-2.png') }} type="image/x-icon">
+
+
+  <!-- <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href={{ url_for('static', filename='/vendor/aos/aos.css') }} rel="stylesheet" type="text/css">
+  <link href={{ url_for('static', filename='/vendor/bootstrap/css/bootstrap.min.css') }} rel="stylesheet" type="text/css">
+  <link href={{ url_for('static', filename='/vendor/bootstrap-icons/bootstrap-icons.css') }} rel="stylesheet" type="text/css">
+  <link href={{ url_for('static', filename='/vendor/fontawesome-free/css/all.min.css') }} rel="stylesheet" type="text/css">
+  <link href={{ url_for('static', filename='/vendor/glightbox/css/glightbox.min.css') }} rel="stylesheet" type="text/css">
+  <link href={{ url_for('static', filename='/vendor/swiper/swiper-bundle.min.css') }} rel="stylesheet" type="text/css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<!--   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"> -->
+
+  <!-- Template Main CSS File -->
+  <link href={{ url_for('static', filename='/css/main.css') }} rel="stylesheet" type="text/css">
+  <link href={{ url_for('static', filename='/css/style-modal.css') }} rel="stylesheet" type="text/css">
+  <link href={{ url_for('static', filename='/css/style-carousel.css') }} rel="stylesheet" type="text/css">
+  <!-- <link href={{ url_for('static', filename='/css/style-textbox.css') }} rel="stylesheet" type="text/css"> -->
+  <!-- <link href={{ url_for('static', filename='/css/style-shop.css') }} rel="stylesheet"> -->
+  <!-- <link href="assets/css/main.css" rel="stylesheet"> -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src={{ url_for('static', filename='/js/jquery_3.6.0.min.js') }} ></script>
+  <script src={{ url_for('static', filename='/js/bootstrap_3.4.1.min.js') }} ></script>
+
+  <link href={{ url_for('static', filename='/lib/owlcarousel/assets/owl.carousel.min.css') }} rel="stylesheet">
+  <!-- =======================================================
+  * Template Name: Logis - v1.2.1
+  * Template URL: https://bootstrapmade.com/logis-bootstrap-logistics-website-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+
+<style>
+  #myDIV {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background-color: lightblue;
+    margin-top: 20px;
+  }
+</style>
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="{{ url_for('beranda') }}" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1>SiBangkit</h1>
+      </a>
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="{{ url_for('beranda') }}" >Home</a></li>
+          <li><a href="{{ url_for('cariObat') }}">Cari Obat</a></li>
+          <li><a href="{{ url_for('diabetes') }}" class="active">Diabetes</a></li>
+          <li><a href="{{ url_for('kulit') }}">Kulit</a></li>
+          <li><a href="{{ url_for('mata') }}">Mata</a></li>
+          <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
+          </li> -->
+          <li><a href="{{ url_for('about') }}">About Us</a></li>
+          <!-- <li><a class="get-a-quote" href="get-a-quote.html">Get a Quote</a></li> -->
+        </ul>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+  <!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs">
+      <div class="page-header d-flex align-items-center" style="background-image: url('static/img/diabetesBG2.jpg');">
+        <div class="container position-relative">
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-6 text-center">
+              <h2>Diabetes</h2>
+              <p>Digunakan untuk memprediksi apakah anda terdeteksi diabetes atau tidak.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav>
+        <div class="container">
+          <ol>
+            <li><a href="{{ url_for('beranda') }}" style="color: #179C8C;">Home</a></li>
+            <li>Diabetes</li>
+          </ol>
+        </div>
+      </nav>
+    </div><!-- End Breadcrumbs -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); padding: 25px 50px 75px 100px;">
+
+       <!--  <div>
+          <iframe style="border:0; width: 100%; height: 340px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen></iframe>
+        </div> --><!-- End Google Maps -->
+
+        <div class="section-title">
+          <center>
+            <h2 style="font-family: Poppins;">Deteksi Dini Diabetes</h2>
+            <p style="font-family: Poppins;">Parameter yang dimasukan adalah Jumlah Kehamilan, Glukosa, Tekanan Darah (Diastolik), <a href="{{ url_for('bmi') }}" style="color: #179C8C">BMI (Body Mass Index)</a>, Umur.</p>
+          </center>
+        </div>
+
+        <div class="row gy-4 mt-4"">
+
+          <div class="col-lg-6">
+            <form action="{{ url_for('diabetes') }}" method="POST" class="php-email-form">
+              
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="number" name="name" class="form-control" id="kehamilan" placeholder="Jumlah Kehamilan (Pria isi 0)" min="0" onKeyUp="if(this.value<0){this.value='0';}" required />
+                </div>
+
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="number" class="form-control" name="email" id="glukosa" placeholder="Glukosa" min="0" onKeyUp="if(this.value<0){this.value='0';}" required />
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="number" name="name" class="form-control" id="darah" placeholder="Tekanan Darah (Diastolik)" min="0" onKeyUp="if(this.value<0){this.value='0';}" required />
+                </div>
+
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="number" class="form-control" name="email" id="bmi" placeholder="BMI" min="0" onKeyUp="if(this.value<0){this.value='0';}" required />
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="number" name="name" class="form-control" id="umur" placeholder="Umur" min="0" onKeyUp="if(this.value<0){this.value='0';}" required>
+                </div>
+
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <div class="row">
+                    <div class="col-md-6 form-group">
+                      <div class="text-center"><button type="submit" id="prediksi_submit" class="btn btn-default btn-sm">Prediksi</button></div>
+                    </div>
+
+                    <div class="col-md-6 form-group">
+                      <div class="text-center"><input type="reset" class="btn btn-danger btn-default" value="Bersihkan"></input></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6 form-group">
+                </div>
+
+                <div class="col-md-6 form-group">
+                    <input type="reset" class="btn btn-info" value="Refresh" id="refresh" style="width: 220px; color: white; margin-top: -30px;"></input>
+                </div>
+              </div>
+              
+              <!-- <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div> -->
+
+              <!-- div class="row">
+                <div class="col-md-6 form-group">
+                  <div class="text-center"><button type="submit" id="prediksi_submit" class="btn btn-default btn-lg">Prediksi</button></div>
+                </div>
+
+                <div class="col-md-6 form-group">
+                  <div class="text-center"><button type="reset" class="btn btn-danger btn-lg">Bersihkan</button></div>
+                </div>
+              </div> -->
+            </form>
+          </div><!-- End Contact Form -->
+
+           <div class="col-lg-6">
+
+            <div class="info-box mb-4" >
+              <center><h4 style="font-family: Poppins;">Hasil Prediksi</h4></center>
+                <!-- Bagian Halaman untuk Hasil Prediksi -->
+                <div id="hasil_prediksi" align="center">
+                    <i class="bi bi-info-circle-fill" style="font-size: 100px; color: #179C8C;"></i>
+                    <br>
+                    <!-- Hasil Prediksi akan ditampilkan di sini-->
+                </div>
+            </div>
+            <!-- End Info Item -->
+
+          <!-- </div> -->
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+    <!-- <p id="some_id0" style="display: none;">Aman</p> -->
+    <!-- <p id="some_id1" style="display: none;">Diabetes</p> -->
+
+    <!-- ======= About Us Section ======= -->
+    <div id="some_id0" align="center" style="display: none;">
+      <section id="about" class="about pt-0">
+        <div class="container" data-aos="fade-up">
+
+          <div class="row gy-4">
+            <div class="col-lg-6 position-relative align-self-start order-lg-last order-first">
+              <img src={{ url_for('static', filename='/img/aman.jpg') }} class="img-fluid" alt="">
+              <!-- <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox play-btn"></a> -->
+            </div>
+            <div class="col-lg-6 content order-last  order-lg-first">
+              <h3>Aman</h3>
+              <p>
+                Selamat, anda tidak terdeteksi diabetes dalam pendeteksian dini ini. Namun ingat ini hanya sebuah aplikasi yang hanya memprediksi masukan dari anda. Tetap komunikasikan dengan dokter supaya anda benar-benar terhindar dari diabetes. Namun ada loh cara alami dan terbiasa hidup sehat untuk mencegah diabetes ini, berikut caranya:
+              </p>
+              <ul>
+                <li data-aos="fade-up" data-aos-delay="100">
+                  <i class="bi bi-calendar-date"></i>
+                  <div>
+                    <h5>Rutin Berolahraga</h5>
+                    <p>Rutin berolahraga juga bisa membantu mengontrol gula darah.dan menstabilkan kadar gula darah sekaligus meningkatkan sensitivitas insulin pada otot mereka yang mengidap diabetes. (Kementerian Kesehatan)</p>
+                  </div>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="200">
+                  <i class="bi bi-person-x-fill"></i>
+                  <div>
+                    <h5>Kurangi Asupan Gula dan Karbohidrat</h5>
+                    <p>Tubuh kita memproses gula dan karbohidrat dengan cepat. Itu menyebabkan meningkatnya gula darah dan merangsang pankreas untuk memproduksi insulin. Solusinya adalah mengganti karbohidrat sederhana (kue, roti, soda, permen, dll) dengan karbohidrat kompleks seperti kentang, jagung, dan biji-bijian. (Prudential)</p>
+                  </div>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="300">
+                  <i class="bi bi-egg-fried"></i>
+                  <div>
+                    <h5>Pilih Makanan Sehat</h5>
+                    <p>Pilihlah makanan yang mengandung banyak lemak jenuh. Cobalah ganti dengan memakan buah-buahan beri, umbian dan ikan yang mengandung asam lemak, omega 3 dan sayur-sayuran</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </div> 
+  <!-- End About Us Section -->
+
+    <!-- ======= About Us Section ======= -->
+    <div id="some_id1" align="center" style="display: none;">
+      <section id="about" class="about pt-0">
+        <div class="container" data-aos="fade-up">
+
+          <div class="row gy-4">
+            <div class="col-lg-6 position-relative align-self-start order-lg-last order-first">
+              <img src={{ url_for('static', filename='/img/diabetes.jpg') }} class="img-fluid" alt="">
+              <!-- <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox play-btn"></a> -->
+            </div>
+            <div class="col-lg-6 content order-last  order-lg-first">
+              <h3>Diabetes</h3>
+              <p>
+                Yah :(, anda terdeteksi diabetes dalam pendeteksian dini ini. Segera komunikasikan dengan dokter supaya anda benar-benar terhindar dari diabetes ini. Namun berikut ini hal-hal yang perlu dilakukan setelah didiagnosis diabetes, berikut caranya:
+              </p>
+              <ul>
+                <li data-aos="fade-up" data-aos-delay="100">
+                  <i class="fa-solid fa-prescription-bottle-medical"></i>
+                  <div>
+                    <h5>Minum Obat Sesuai Instruksi Dokter</h5>
+                    <p>Dokter umumnya meresepkan obat untuk penderita diabetes tipe 2 agar diminum secara teratur. Ingatlah untuk meminumnya sesuai petunjuk dokter Anda.</p>
+                  </div>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="200">
+                  <i class="fa-solid fa-shoe-prints"></i>
+                  <div>
+                    <h5>Selalu Periksa Kondisi Kaki</h5>
+                    <p>Karena penderita diabetes dapat mengalami masalah kaki tetapi tidak merasakan apa-apa akibat kerusakan saraf, rawatlah kaki Anda. Periksa kaki Anda setiap hari apakah ada luka, lecet, atau hal tidak biasa lainnya.</p>
+                  </div>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="300">
+                  <i class="fa-solid fa-vials"></i>
+                  <div>
+                    <h5>Kontrol Gula Darah</h5>
+                    <p>Dengan melakukan pengecekan gula darah secara rutin agar tetap terkendali, Anda akan mengetahui kapan kadar gula darah Anda mulai naik dan dapat segera melakukan perubahan gaya hidup yang lebih sehat.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </div>
+  <!-- End About Us Section -->
+
+  <!-- Rekomendasi Obat -->
+  <div id="obatDiabetes" align="center" style="display: none;">
+    <div class="container-fluid pt-5">
+        <div class="text-center mb-4">
+            <h2 class="section-title px-5" style="font-family: Poppins;"><span class="px-2">-- Rekomendasi Obat --</span></h2>
+        </div>
+
+<div class="container-xl">
+  <div class="row">
+    <div class="col-md-10 mx-auto">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+      <!-- Carousel indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+      </ol>   
+      <!-- Wrapper for carousel items -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="thumb-wrapper">
+                <div class="img-box">
+                  <img class="img-fluid w-100" src={{ url_for('static', filename='/FotoObat/Diabetes/Amaryl.png') }} alt="">
+                </div>
+                <div class="thumb-content">
+                  <h5>Amaryl</h5>
+                  <p>Rp72.700 - Rp99.000</p>
+                  <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Lihat Detail<i class="fa fa-angle-right"></i></a>
+                </div>            
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="thumb-wrapper">
+                <div class="img-box">
+                 <img class="img-fluid w-100" src={{ url_for('static', filename='/FotoObat/Diabetes/Gluco.png') }} alt="">
+                </div>
+                <div class="thumb-content">
+                  <h5>Glucophage XR</h5>
+                  <p>Rp37.200 - Rp57.600</p>
+                  <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2">Lihat Detail<i class="fa fa-angle-right"></i></a>
+                </div>            
+              </div>
+            </div>        
+            <div class="col-sm-4">
+              <div class="thumb-wrapper">
+                <div class="img-box">
+                   <img class="img-fluid w-100" src={{ url_for('static', filename='/FotoObat/Diabetes/Glurenorm.png') }} alt="" width = "150px" height = "180px"/>
+                </div>
+                <div class="thumb-content">
+                  <h5>Glurenorm</h5>
+                  <p>Rp139.100 - Rp154.900</p>
+                  <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal3">Lihat Detail<i class="fa fa-angle-right"></i></a>
+                </div>            
+              </div>          
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="thumb-wrapper">
+                <div class="img-box">
+                  <img class="img-fluid w-100" src={{ url_for('static', filename='/FotoObat/Diabetes/Metmorfin.png') }} alt="" width = "150px" height = "180px"/>
+                </div>
+                <div class="thumb-content">
+                  <h5>Metformin</h5>
+                  <p>Rp1.800 - Rp5.200</p>
+                  <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal4">Lihat Detail<i class="fa fa-angle-right"></i></a>
+                </div>            
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="thumb-wrapper">
+                <div class="img-box">
+                  <img class="img-fluid w-100" src={{ url_for('static', filename='/FotoObat/Diabetes/Metrix.png') }} alt="">
+                </div>
+                <div class="thumb-content">
+                  <h5>Metrix</h5>
+                  <p>Rp65.200 - Rp114.000</p>
+                  <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal5">Lihat Detail<i class="fa fa-angle-right"></i></a>
+                </div>            
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Carousel controls -->
+      <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+        <i class="fa fa-angle-left"></i>
+      </a>
+      <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+        <i class="fa fa-angle-right"></i>
+      </a>
+    </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </div>
+  <!-- End Rekomendasi Obat -->
+
+<!-- Modal Amaryl -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Detail Obat</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><i class="fa fa-close"></i></span>
+          </button>
+      </div>
+            <div class="modal-body">
+              <div class="row g-0">
+                <div class="col-md-8 border-right">
+                  <div class="status p-3">
+                    <table class="table table-borderless">
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <b><span class="heading d-block">Kategori</span></b>
+                              <span class="subheadings">Diabetes</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Komposisi</span>
+                              <span class="subheadings">Per tablet Amaryl mengandung Glimepriride 2 mg</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Rating</span>
+                              <span class="subheadings"><i class="dots"></i>5</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Dosis</span>
+                              <span class="subheadings">PENGGUNAAN OBAT INI HARUS SESUAI DENGAN PETUNJUK DOKTER. Dosis awal: 1 mg sekali sehari. Dapat ditingkatkan dengan interval 1-2 minggu dan dilakukan secara bertahap sebagai berikut: 1 mg-2 mg-3 mg-4 mg dan dalam kasus luar biasa, 8 mg. Pasien dengan diabetes terkontrol baik 1-4 mg/hr.</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Indikasi Umum</span>
+                              <span class="subheadings">INFORMASI OBAT INI HANYA UNTUK KALANGAN MEDIS. Diabetes Miletus tipe 2, dimana kadar gula darah tidak dapat di kontrol hanya dengan diet, olah raga & penurunan BB. Dpt dikombinasi dg metformin atau insulin.</span>
+                            </div>
+                          </td>
+                          <td>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Aturan Pakai</span>
+                              <span class="subheadings">Sebaiknya diberikan bersama makanan, Berikan segera sblm makan utama pertama pd hari yg sama. Jangan mengurangi jadwal makan. Telan utuh, jangan dikunyah/dihancurkan.</span>
+                            </div>
+                          </td>  
+                          <td colspan="2">
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Deskripsi</span>
+                              <span class="subheadings">AMARYL TABLET merupakan obat anti diabetes mengandung Glimepiride yang termasuk ke dalam golongan sulfonilurea. Amaryl digunakan sebagai obat anti diabetes mellitus tipe 2 atau Non-Insulin-Dependent (type II) Diabetes Melitus (NIDDM) dimana kadar glukosa darah tidak dapat hanya dikontrol dengan diet dan olahraga saja. Obat ini bekerja dengan menurunkan kadar gula darah dengan merangsang pelepasan insulin dari sel beta pankreas yang masih berfungsi.</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <!-- <div class="d-flex flex-column">
+                              <span class="heading d-block">Direction</span>
+                              <span class="d-block subheadings">Get direction by using</span>
+                              <span class="d-flex flex-row">
+                              <img src="https://img.icons8.com/color/100/000000/google-maps.png" class="rounded" width="30" />
+                              <img src="https://img.icons8.com/color/100/000000/pittsburgh-map.png" class="rounded" width="30" />
+                              </span>
+                            </div> -->
+                          </td>  
+                          <td colspan="2">
+                            <!-- <div class="d-flex flex-column">
+                              <span class="heading d-block">Hospital Gallary</span>
+                              <span class="d-flex flex-row gallery">
+                              <img src="https://i.imgur.com/VfRSLTm.jpg" width="50" class="rounded">
+                              <img src="https://i.imgur.com/jb9Cy5h.jpg" width="50" class="rounded">
+                              <img src="https://i.imgur.com/vBUz4HA.jpg" width="50" class="rounded">
+                              </span>
+                            </div> -->
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              <div class="col-md-4">
+                <div class="p-2 text-center">
+                  <div class="profile">
+                    <img src={{ url_for('static', filename='/FotoObat/Diabetes/Amaryl.png') }} width="250" class="mx-auto d-block">
+                    <span class="d-block mt-3 font-weight-bold">Amaryl 2 mg</span>
+                  </div>
+                  <div class="about-doctor">
+                    <table class="table table-borderless">
+                     <!--  <tbody>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Education</span>
+                              <span class="subheadings">University of Harward</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Language</span>
+                              <span class="subheadings">Spanish, English</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Organisation</span>
+                              <span class="subheadings">Accupunture</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Specialist</span>
+                              <span class="subheadings">Accupunture</span>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody> -->
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>
+</div>
+<!-- End Modal -->
+
+<!-- Modal Glucophage -->
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Detail Obat</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><i class="fa fa-close"></i></span>
+          </button>
+      </div>
+            <div class="modal-body">
+              <div class="row g-0">
+                <div class="col-md-8 border-right">
+                  <div class="status p-3">
+                    <table class="table table-borderless">
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <b><span class="heading d-block">Kategori</span></b>
+                              <span class="subheadings">Diabetes</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Komposisi</span>
+                              <span class="subheadings">Tiap tablet lepas lambat mengandung: Metformin Hydrochloride 500 mg</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Rating</span>
+                              <span class="subheadings"><i class="dots"></i>5</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Dosis</span>
+                              <span class="subheadings">PENGGUNAAN OBAT INI HARUS SESUAI DENGAN PETUNJUK DOKTER. - Dosis awal: Sehari 1 x 500 mg. Dosis dapat ditingkatkan sebesar 500 mg tiap minggu. - Dosis maksimal 2000 mg XR sekali sehari. Jika terapi dengan 2.000 mg sekali sehari belum mencapai hasil yang optimal, dapat dipertimbangkan pemberian 2 x 1000 mg XR per hari.</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Indikasi Umum</span>
+                              <span class="subheadings">INFORMASI OBAT INI HANYA UNTUK KALANGAN MEDIS. Terapi awal untuk diabetes dewasa dengan keadaan kelebihan berat badan serta kadar gula darah yang tidak dapat dikendalikan hanya dengan diet saja. Terapi kombinasi untuk kegagalan terapi Sulfonilurea primer atau sekunder. Terapi tambahan pada insulin-dependent diabetes mellitus (IDDM) atau diabetes tipe 1 untuk mengurangi dosis insulin.</span>
+                            </div>
+                          </td>
+                          <td>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Aturan Pakai</span>
+                              <span class="subheadings">Sebaiknya diminum bersama makanan, untuk dosis 1 x sehari diberikan bersama makan malam. Telan utuh, jangan dipotong, dikunyah, atau dihancurkan.</span>
+                            </div>
+                          </td>  
+                          <td colspan="2">
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Deskripsi</span>
+                              <span class="subheadings">GLUCOPHAGE XR 500 MG merupakan obat dengan kandungan Metformin dalam bentuk extended release atau tablet lepas lambat yang digunakan untuk mengontrol dan menurunkan kadar gula darah pada penderita diabetes tipe 2. Metformin termasuk ke dalam obat antidiabetes golongan Biguanide, yang bekerja dengan cara menghambat produksi glukosa (glukoneogenesis) di hati.</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <!-- <div class="d-flex flex-column">
+                              <span class="heading d-block">Direction</span>
+                              <span class="d-block subheadings">Get direction by using</span>
+                              <span class="d-flex flex-row">
+                              <img src="https://img.icons8.com/color/100/000000/google-maps.png" class="rounded" width="30" />
+                              <img src="https://img.icons8.com/color/100/000000/pittsburgh-map.png" class="rounded" width="30" />
+                              </span>
+                            </div> -->
+                          </td>  
+                          <td colspan="2">
+                            <!-- <div class="d-flex flex-column">
+                              <span class="heading d-block">Hospital Gallary</span>
+                              <span class="d-flex flex-row gallery">
+                              <img src="https://i.imgur.com/VfRSLTm.jpg" width="50" class="rounded">
+                              <img src="https://i.imgur.com/jb9Cy5h.jpg" width="50" class="rounded">
+                              <img src="https://i.imgur.com/vBUz4HA.jpg" width="50" class="rounded">
+                              </span>
+                            </div> -->
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              <div class="col-md-4">
+                <div class="p-2 text-center">
+                  <div class="profile">
+                    <img src={{ url_for('static', filename='/FotoObat/Diabetes/Gluco.png') }} width="250" class="mx-auto d-block">
+                    <span class="d-block mt-3 font-weight-bold">Glucophage XR 500 mg</span>
+                  </div>
+                  <div class="about-doctor">
+                    <table class="table table-borderless">
+                     <!--  <tbody>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Education</span>
+                              <span class="subheadings">University of Harward</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Language</span>
+                              <span class="subheadings">Spanish, English</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Organisation</span>
+                              <span class="subheadings">Accupunture</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Specialist</span>
+                              <span class="subheadings">Accupunture</span>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody> -->
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>
+</div>
+<!-- End Modal -->
+
+<!-- Modal Glure -->
+
+<div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Detail Obat</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><i class="fa fa-close"></i></span>
+          </button>
+      </div>
+            <div class="modal-body">
+              <div class="row g-0">
+                <div class="col-md-8 border-right">
+                  <div class="status p-3">
+                    <table class="table table-borderless">
+                                            <tbody>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <b><span class="heading d-block">Kategori</span></b>
+                              <span class="subheadings">Diabetes</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Komposisi</span>
+                              <span class="subheadings">Tiap tablet mengandung Gliquidone 30 mg</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Rating</span>
+                              <span class="subheadings"><i class="dots"></i>5</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Dosis</span>
+                              <span class="subheadings">Dosis awal : 15 mg, dosis harian hingga 45-60 mg setiap hari. - Dosis maksimum : 180 mg per hari.</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Indikasi Umum</span>
+                              <span class="subheadings">Mengontrol kadar gula darah pada pasien Diabetes Melitus Tipe 2.</span>
+                            </div>
+                          </td>
+                          <td>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Aturan Pakai</span>
+                              <span class="subheadings">Dikonsumsi sebelum makan.</span>
+                            </div>
+                          </td>  
+                          <td colspan="2">
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Deskripsi</span>
+                              <span class="subheadings">GLURENORM TABLET merupakan obat antidiabetik oral yang termasuk dalam golongan sulfonilurea. Gliquidone digunakan untuk mengontrol kadar gula darah pada pasien Diabetes Melitus Tipe 2. Obat ini bekerja menurunkan kadar gula darah dengan merangsang pelepasan insulin dari sel beta pankreas yang masih berfungsi.</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <!-- <div class="d-flex flex-column">
+                              <span class="heading d-block">Direction</span>
+                              <span class="d-block subheadings">Get direction by using</span>
+                              <span class="d-flex flex-row">
+                              <img src="https://img.icons8.com/color/100/000000/google-maps.png" class="rounded" width="30" />
+                              <img src="https://img.icons8.com/color/100/000000/pittsburgh-map.png" class="rounded" width="30" />
+                              </span>
+                            </div> -->
+                          </td>  
+                          <td colspan="2">
+                            <!-- <div class="d-flex flex-column">
+                              <span class="heading d-block">Hospital Gallary</span>
+                              <span class="d-flex flex-row gallery">
+                              <img src="https://i.imgur.com/VfRSLTm.jpg" width="50" class="rounded">
+                              <img src="https://i.imgur.com/jb9Cy5h.jpg" width="50" class="rounded">
+                              <img src="https://i.imgur.com/vBUz4HA.jpg" width="50" class="rounded">
+                              </span>
+                            </div> -->
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              <div class="col-md-4">
+                <div class="p-2 text-center">
+                  <div class="profile">
+                    <img src={{ url_for('static', filename='/FotoObat/Diabetes/Glurenorm.png') }} width="250" class="mx-auto d-block">
+                    <span class="d-block mt-3 font-weight-bold">Glurenorm 30 mg</span>
+                  </div>
+                  <div class="about-doctor">
+                    <table class="table table-borderless">
+                     <!--  <tbody>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Education</span>
+                              <span class="subheadings">University of Harward</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Language</span>
+                              <span class="subheadings">Spanish, English</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Organisation</span>
+                              <span class="subheadings">Accupunture</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Specialist</span>
+                              <span class="subheadings">Accupunture</span>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody> -->
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>
+</div>
+
+<!-- End Glure -->
+
+<!-- Modal Metmo -->
+
+<div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Detail Obat</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><i class="fa fa-close"></i></span>
+          </button>
+      </div>
+            <div class="modal-body">
+              <div class="row g-0">
+                <div class="col-md-8 border-right">
+                  <div class="status p-3">
+                    <table class="table table-borderless">
+                                            <tbody>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <b><span class="heading d-block">Kategori</span></b>
+                              <span class="subheadings">Diabetes</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Komposisi</span>
+                              <span class="subheadings">Metformin HCl 500 mg</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Rating</span>
+                              <span class="subheadings"><i class="dots"></i>5</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Dosis</span>
+                              <span class="subheadings">Dosis awal: Sehari 2 x 500 mg atau 2 x 850 mg. Dosis dapat ditingkatkan sesuai dengan respon pasien. Dosis maksimal 3000 mg/hari dalam 3 dosis terbagi. Dosis pemeliharaan: Sehari 2 x 850 mg.</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Indikasi Umum</span>
+                              <span class="subheadings">Terapi awal untuk diabetes dewasa dengan keadaan kelebihan berat badan serta kadar gula darah yang tidak dapat dikendalikan hanya dengan diet saja. Terapi kombinasi untuk kegagalan terapi Sulfonilurea primer atau sekunder. Terapi tambahan pada insulin-dependent diabetes mellitus (IDDM) atau diabetes tipe 1 untuk mengurangi dosis insulin.</span>
+                            </div>
+                          </td>
+                          <td>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Aturan Pakai</span>
+                              <span class="subheadings">Bersamaan dengan makan atau sesudah makan dalam dosis terbagi</span>
+                            </div>
+                          </td>  
+                          <td colspan="2">
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Deskripsi</span>
+                              <span class="subheadings">METFORMIN 500 MG merupakan obat antidiabetes generik yang dapat mengontrol dan menurunkan kadar gula darah pada penderita diabetes tipe 2. Metformin termasuk ke dalam obat antidiabetes golongan Biguanide, yang bekerja dengan cara menghambat produksi glukosa (glukoneogenesis) di hati.</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <!-- <div class="d-flex flex-column">
+                              <span class="heading d-block">Direction</span>
+                              <span class="d-block subheadings">Get direction by using</span>
+                              <span class="d-flex flex-row">
+                              <img src="https://img.icons8.com/color/100/000000/google-maps.png" class="rounded" width="30" />
+                              <img src="https://img.icons8.com/color/100/000000/pittsburgh-map.png" class="rounded" width="30" />
+                              </span>
+                            </div> -->
+                          </td>  
+                          <td colspan="2">
+                            <!-- <div class="d-flex flex-column">
+                              <span class="heading d-block">Hospital Gallary</span>
+                              <span class="d-flex flex-row gallery">
+                              <img src="https://i.imgur.com/VfRSLTm.jpg" width="50" class="rounded">
+                              <img src="https://i.imgur.com/jb9Cy5h.jpg" width="50" class="rounded">
+                              <img src="https://i.imgur.com/vBUz4HA.jpg" width="50" class="rounded">
+                              </span>
+                            </div> -->
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              <div class="col-md-4">
+                <div class="p-2 text-center">
+                  <div class="profile">
+                    <img src={{ url_for('static', filename='/FotoObat/Diabetes/Metmorfin.png') }} width="250" class="mx-auto d-block">
+                    <span class="d-block mt-3 font-weight-bold">Metformin 500 mg</span>
+                  </div>
+                  <div class="about-doctor">
+                    <table class="table table-borderless">
+                      <!-- <tbody>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Education</span>
+                              <span class="subheadings">University of Harward</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Language</span>
+                              <span class="subheadings">Spanish, English</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Organisation</span>
+                              <span class="subheadings">Accupunture</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Specialist</span>
+                              <span class="subheadings">Accupunture</span>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody> -->
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>
+</div>
+
+<!-- End Metmo -->
+
+<!-- Modal Metrix -->
+
+<div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Detail Obat</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><i class="fa fa-close"></i></span>
+          </button>
+      </div>
+            <div class="modal-body">
+              <div class="row g-0">
+                <div class="col-md-8 border-right">
+                  <div class="status p-3">
+                    <table class="table table-borderless">
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <b><span class="heading d-block">Kategori</span></b>
+                              <span class="subheadings">Diabetes</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Komposisi</span>
+                              <span class="subheadings">Tiap tablet mengandung Glimepiride 2 mg</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Rating</span>
+                              <span class="subheadings"><i class="dots"></i>4.9</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Dosis</span>
+                              <span class="subheadings">Dosis awal: 1-2 mg, satu kali sehari - Dosis pemeliharaan: 1-4 mg, satu kali sehari, dosis maksimum 8 mg, satu kali sehari. - Pada saat pemberian telah mencapai dosis 2 mg maka kenaikan dosis tidak boleh melebihi 2 mg dengan interval 1-2 minggu tergantung dari respon gula darah.</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Indikasi Umum</span>
+                              <span class="subheadings">INFORMASI OBAT INI HANYA UNTUK KALANGAN MEDIS. Diabetes Melitus Tipe 2 atau Non-Insulin-Dependent (type II) Diabetes Melitus (NIDDM) dimana kadar glukosa darah tidak dapat hanya dikontrol dengan diet dan olahraga saja.</span>
+                            </div>
+                          </td>
+                          <td>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Aturan Pakai</span>
+                              <span class="subheadings">Segera sebelum makan utama pertama pada hari itu (setiap harinya) dan tidak boleh mengurangi jadwal makan.</span>
+                            </div>
+                          </td>  
+                          <td colspan="2">
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Deskripsi</span>
+                              <span class="subheadings">METRIX TABLET merupakan obat anti diabetes mengandung Glimepiride yang termasuk ke dalam golongan sulfonilurea. Metrix digunakan sebagai obat anti diabetes mellitus tipe 2 atau Non-Insulin-Dependent (type II) Diabetes Melitus (NIDDM) dimana kadar glukosa darah tidak dapat hanya dikontrol dengan diet dan olahraga saja. Obat ini bekerja dengan menurunkan kadar gula darah dengan merangsang pelepasan insulin dari sel beta pankreas yang masih berfungsi.</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <!-- <div class="d-flex flex-column">
+                              <span class="heading d-block">Direction</span>
+                              <span class="d-block subheadings">Get direction by using</span>
+                              <span class="d-flex flex-row">
+                              <img src="https://img.icons8.com/color/100/000000/google-maps.png" class="rounded" width="30" />
+                              <img src="https://img.icons8.com/color/100/000000/pittsburgh-map.png" class="rounded" width="30" />
+                              </span>
+                            </div> -->
+                          </td>  
+                          <td colspan="2">
+                            <!-- <div class="d-flex flex-column">
+                              <span class="heading d-block">Hospital Gallary</span>
+                              <span class="d-flex flex-row gallery">
+                              <img src="https://i.imgur.com/VfRSLTm.jpg" width="50" class="rounded">
+                              <img src="https://i.imgur.com/jb9Cy5h.jpg" width="50" class="rounded">
+                              <img src="https://i.imgur.com/vBUz4HA.jpg" width="50" class="rounded">
+                              </span>
+                            </div> -->
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              <div class="col-md-4">
+                <div class="p-2 text-center">
+                  <div class="profile">
+                    <img src={{ url_for('static', filename='/FotoObat/Diabetes/Metrix.png') }} width="250" class="mx-auto d-block">
+                    <span class="d-block mt-3 font-weight-bold">Metrix 2 mg</span>
+                  </div>
+                  <div class="about-doctor">
+                    <table class="table table-borderless">
+                      <!-- <tbody>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Education</span>
+                              <span class="subheadings">University of Harward</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Language</span>
+                              <span class="subheadings">Spanish, English</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Organisation</span>
+                              <span class="subheadings">Accupunture</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Specialist</span>
+                              <span class="subheadings">Accupunture</span>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody> -->
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>
+</div>
+
+<!-- End Metrix -->
+
+
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-info">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span>SiBangkit</span>
+          </a>
+          <p>Aplikasi untuk mendeteksi penyakit seperti diabetes, penyakit pada kulit atau mata.</p>
+          <div class="social-links d-flex mt-4">
+            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="{{ url_for('beranda') }}">Home</a></li>
+            <li><a href="{{ url_for('cariObat') }}">Cari Obat</a></li>
+            <li><a href="{{ url_for('diabetes') }}">Diabetes</a></li>
+            <li><a href="{{ url_for('kulit') }}">Kulit</a></li>
+            <li><a href="{{ url_for('mata') }}">Mata</a></li>
+            <li><a href="{{ url_for('about') }}">About Us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Source Code</h4>
+          <ul>
+            <li><a href="">GitHub</a></li>
+          </ul>
+        </div>
+
+        
+
+      </div>
+    </div>
+
+    <div class="container mt-4">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Logis</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/logis-bootstrap-logistics-website-template/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+
+  </footer><!-- End Footer -->
+  <!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src={{ url_for('static', filename='/vendor/bootstrap/js/bootstrap.bundle.min.js') }}></script>
+  <script src={{ url_for('static', filename='/vendor/purecounter/purecounter_vanilla.js') }}></script>
+  <script src={{ url_for('static', filename='/vendor/glightbox/js/glightbox.min.js') }}></script>
+  <script src={{ url_for('static', filename='/vendor/swiper/swiper-bundle.min.js') }}></script>
+  <script src={{ url_for('static', filename='/vendor/aos/aos.js') }}></script>
+  <script src={{ url_for('static', filename='/vendor/php-email-form/validate.js') }}></script>
+
+
+<!--   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script> -->
+
+   <!-- Template Main JS File -->
+  <script src={{ url_for('static', filename='/js/main.js') }}></script>
+  <!-- <script src="assets/js/main.js"></script> -->
+
+  <script src={{ url_for('static', filename='/js/client_side.js') }}></script>
+
+  <!-- JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+  <script src={{ url_for('static', filename='/lib/easing/easing.min.js') }}></script>
+  <script src={{ url_for('static', filename='/lib/owlcarousel/owl.carousel.min.js') }}></script>
+
+  <!-- Contact Javascript File -->
+  <script src={{ url_for('static', filename='/mail/jqBootstrapValidation.min.js') }}></script>
+  <script src={{ url_for('static', filename='/mail/contact.js') }}></script>
+  
+  <!-- Template Javascript -->
+  <!-- <script src={{ url_for('static', filename='/js/main-shop.js') }}></script> -->
+
+  <!-- Script Modal -->
+  <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js'></script>
+  <script type='text/javascript' src='#'></script>
+  <script type='text/javascript' src='#'></script>
+  <script type='text/javascript' src='#'></script>
+  <script type='text/javascript'>#</script>
+  <script type='text/javascript'>var myLink = document.querySelector('a[href="#"]');
+  myLink.addEventListener('click', function(e) {
+  e.preventDefault();
+  });</script>
+  <!-- Script Modal -->
+
+  <!-- Script Refresh -->
+  <script type="text/javascript">
+    $(document).ready(function () {
+        $("#refresh").click(function () {
+            location.reload(true);
+        });
+    });
+  </script>
+  <!-- End -->
+
+</body>
+
+</html>

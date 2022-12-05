@@ -1,0 +1,3423 @@
+  <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>SiBangkit</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <!-- <link href={{ url_for('static', filename='/img/favicon.png') }} rel="icon">
+  <link href={{ url_for('static', filename='/img/apple-touch-icon.png') }} rel="apple-touch-icon"> -->
+  <link rel="icon" href={{ url_for('static', filename='/logo/icon-title-2.png') }} type="image/x-icon">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <!-- <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href={{ url_for('static', filename='/vendor/aos/aos.css') }} rel="stylesheet" type="text/css">
+  <link href={{ url_for('static', filename='/vendor/bootstrap/css/bootstrap.min.css') }} rel="stylesheet" type="text/css">
+  <link href={{ url_for('static', filename='/vendor/bootstrap-icons/bootstrap-icons.css') }} rel="stylesheet" type="text/css">
+  <link href={{ url_for('static', filename='/vendor/fontawesome-free/css/all.min.css') }} rel="stylesheet" type="text/css">
+  <link href={{ url_for('static', filename='/vendor/glightbox/css/glightbox.min.css') }} rel="stylesheet" type="text/css">
+  <link href={{ url_for('static', filename='/vendor/swiper/swiper-bundle.min.css') }} rel="stylesheet" type="text/css">
+
+
+<!--   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"> -->
+
+  <!-- Template Main CSS File -->
+  <link href={{ url_for('static', filename='/css/main.css') }} rel="stylesheet" type="text/css">
+  <link href={{ url_for('static', filename='/css/style-modal.css') }} rel="stylesheet" type="text/css">
+  <!-- <link href="assets/css/main.css" rel="stylesheet"> -->
+
+  <script src={{ url_for('static', filename='/js/jquery_3.6.0.min.js') }} ></script>
+  <script src={{ url_for('static', filename='/js/bootstrap_3.4.1.min.js') }} ></script>
+
+  <!-- =======================================================
+  * Template Name: Logis - v1.2.1
+  * Template URL: https://bootstrapmade.com/logis-bootstrap-logistics-website-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="{{ url_for('beranda') }}" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1>SiBangkit</h1>
+      </a>
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="{{ url_for('beranda') }}">Home</a></li>
+          <li><a href="{{ url_for('cariObat') }}">Cari Obat</a></li>
+          <li><a href="{{ url_for('diabetes') }}">Diabetes</a></li>
+          <li><a href="{{ url_for('kulit') }}" class="active">Kulit</a></li>
+          <li><a href="{{ url_for('mata') }}">Mata</a></li>
+          <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
+          </li> -->
+          <li><a href="{{ url_for('about') }}">About Us</a></li>
+          <!-- <li><a class="get-a-quote" href="get-a-quote.html">Get a Quote</a></li> -->
+        </ul>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+  <!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs">
+      <div class="page-header d-flex align-items-center" style="background-image: url('static/img/skincare.jpg');">
+        <div class="container position-relative">
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-6 text-center">
+              <h2>Kulit</h2>
+              <p>Digunakan untuk klasifikasi penyakit pada kulit anda dan akan memberi informasi mengenai penyakitnya, memberikan masukan atau tips dan obat yang bisa digunakan.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav>
+        <div class="container">
+          <ol>
+            <li><a href="{{ url_for('beranda') }}" style="color: #179C8C">Home</a></li>
+            <li>Kulit</li>
+          </ol>
+        </div>
+      </nav>
+    </div><!-- End Breadcrumbs -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); padding: 25px 50px 75px 100px;">
+
+       <!--  <div>
+          <iframe style="border:0; width: 100%; height: 340px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen></iframe>
+        </div> --><!-- End Google Maps -->
+
+        <div class="section-title">
+          <center>
+            <h2 style="font-family: Poppins;">Klasifikasi Penyakit Pada Kulit</h2>
+            <p style="font-family: Poppins;"> <a href = "#" data-toggle="modal" data-target="#modalPanduan"><i class="fas fa-eye text-primary mr-1"></i> Ambil gambar</a></p>
+          </center>
+        </div>
+
+        <div class="row gy-4 mt-4"">
+
+          <div class="col-lg-6">
+            <form action="{{ url_for('kulit') }}" method="POST">
+            
+            <!-- Input atau Upload Gambar dari Pengguna -->
+            <div class="wrapper">
+              <div class="container">
+                <h3>Upload Gambar</h3>
+                <div class="upload-container">
+                  <div class="border-container">
+                    <div class="icons fa-4x">
+                      <img src={{ url_for('static', filename='/images/upload.jpg') }} width="120" style="margin-left: 30px;"></img>
+                    </div>
+                    <input type="file" id="input_gambar" name="file">                  
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Tombol Prediksi -->
+            <br>
+            <button type="submit" id="prediksi_submit" class="btn btn-success btn-lg" style="width: 120px; color: white; height: 50px;">Deteksi</button> 
+            |
+            <input type="reset" class="btn btn-warning btn-lg" value="Refresh" id="refresh" style="width: 120px; color: white; height: 50px;"></input>
+              <!-- <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="number" name="name" class="form-control" id="umur" placeholder="Umur" required>
+                </div> -->
+
+                <!-- BUTTON -->
+                <!-- <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <div class="row">
+                    <div class="col-md-6 form-group">
+                      <div class="text-center"><button type="submit" id="prediksi_submit" class="btn btn-default btn-sm">Prediksi</button></div>
+                    </div>
+
+                    <div class="col-md-6 form-group">
+                      <div class="text-center"><button type="reset" class="btn btn-danger btn-default">Bersihkan</button></div>
+                    </div>
+                  </div>
+                </div> -->
+              <!-- </div> -->
+            </form>
+          </div><!-- End Contact Form -->
+
+           <div class="col-lg-6">
+
+            <div class="info-box mb-4" >
+              <center><h4 style="font-family: Poppins;">Hasil Prediksi</h4></center>
+                <!-- Bagian Halaman untuk Hasil Prediksi -->
+                <div id="hasil_prediksi" align="center">
+                    <i class="bi bi-info-circle-fill" style="font-size: 100px; color: #179C8C;"></i>
+                    <!-- Hasil Prediksi akan ditampilkan di sini-->
+                </div>
+            </div>
+            <!-- End Info Item -->
+
+          <!-- </div> -->
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+    <!-- ======= Biduran Penjelasan ======= -->
+    <div id="penjelasan_biduran" style="display: none;">
+    <section id="features" class="features">
+    <div class="row gy-4 align-items-center features-item" data-aos="fade-up">
+          <div class="col-md-5" align="center">
+            <img src={{ url_for('static', filename='/images/biduran.jpg') }} width="400px" height="100px" class="img-fluid img-thumbnail" alt="">
+          </div>
+          <div class="col-md-7">
+            <h3>Biduran</h3>
+            <p>Biduran atau urtikaria adalah reaksi pada kulit yang menyebabkan munculnya bentol berwarna merah.</p>
+            <ul>
+              <li><i class="bi bi-check"></i> Awalnya, bentol-bentol merah muncul pada satu bagian tubuh, kemudian menyebar.</li>
+              <li><i class="bi bi-check"></i> Bentuk dan ukurannya pun bervariasi.</li>
+              <li><i class="bi bi-check"></i> Ruam pada biduran biasanya terasa sangat gatal, dan terkadang bisa juga terasa perih.</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    </div>
+    <!-- End About Us Section -->
+
+    <!-- ======= About Us Section ======= -->
+    <div id="some_id0" align="center" style="display: none;">
+      <section id="about" class="about pt-0">
+        <div class="container" data-aos="fade-up">
+
+          <div class="row gy-4">
+            <div class="col-lg-6 content order-last  order-lg-first">
+              <h3>Penyebab</h3>
+              <p>
+                Penyebab penyakit biduran adalah tingginya kadar histamin dan unsur kimia lain yang dilepaskan ke kulit. Kemudian, histamin dan unsur kimia lain tersebut membuat pembuluh darah melebar sehingga aliran darah pun meningkat.
+              </p>
+              <ul>
+                <li data-aos="fade-up" data-aos-delay="100">
+                  <i class="fas fa-utensils"></i>
+                  <div>
+                    <h5>Alergi makanan</h5>
+                    <p>Misalnya pada makanan seperti udang, susu, telur, kedelai, ikan, kacang, kedelai, gandum, kerang, kepiting dan kelapa.</p>
+                  </div>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="200">
+                  <i class="fas fa-building"></i>
+                  <div>
+                    <h5>Faktor Lingkungan</h5>
+                    <p>Suhu terlalu panas atau terlalu dingin, sinar matahari</p>
+                  </div>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="300">
+                 <i class="fas fa-spider"></i>
+                  <div>
+                    <h5>Gigitan Serangga</h5>
+                    <p>Gigitan serangga juga bisa memicu penyakit ini</p>
+                  </div>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="300">
+                  <i class="fas fa-tshirt"></i>
+                  <div>
+                    <h5>Memakai Pakaian yang Terlalu Ketat Untuk Waktu yang Lama</h5>
+                    <p>Pemilihan pakaian juga perlu diperhatikan</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-6 content order-last  order-lg-first">
+              <h3>Masukan & Tips</h3>
+              <p>
+                Untuk menghindari penyakit ini terjadi, anda bisa melakukan beberapa tips ini seperti:
+              </p>
+              <ul>
+                <li data-aos="fade-up" data-aos-delay="100">
+                  <i class="fas fa-bath"></i>
+                  <div>
+                    <h5>Bersihkan Kulit</h5>
+                    <p>Mandi atau membersihkan kulit merupakan pertolongan pertama yang bisa dilakukan untuk mengatasi biduran. Saat biduran muncul, mandilah dengan air bersih namun jangan gunakan air hangat saat membasuh kulit yang mengalami biduran.</p>
+                  </div>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="200">
+                  <i class="fas fa-box-tissue"></i>
+                  <div>
+                    <h5>Kompres</h5>
+                    <p>Meredakan gatal akibat biduran juga bisa dilakukan dengan mengompres kulit. Gunakan kompres air dingin dan letakkan pada bagian kulit yang mengalami biduran.</p>
+                  </div>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="300">
+                  <i class="fas fa-user-tie"></i>
+                  <div>
+                    <h5>Pakaian yang nyaman</h5>
+                    <p>Pilih pakaian yang nyaman saat mengalami biduran. Mengenakan pakaian yang terlalu ketat malah bisa menyebabkan biduran di kulit menjadi lebih parah. Selama biduran menyerang, kenakan jenis pakaian yang terbuat dari kain yang lembut dan tidak berbahaya bagi kulit.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </div> 
+  <!-- End About Us Section -->
+
+  <!-- ======= Biduran Penjelasan ======= -->
+    <div id="penjelasan_bisul" style="display: none;">
+    <section id="features" class="features">
+    <div class="row gy-4 align-items-center features-item" data-aos="fade-up">
+          <div class="col-md-5" align="center">
+            <img src={{ url_for('static', filename='/images/bisul.jpg') }} width="400px" height="100px" class="img-fluid img-thumbnail" alt="">
+          </div>
+          <div class="col-md-7">
+            <h3>Bisul</h3>
+            <p>Bisul atau furunkel adalah benjolan merah pada kulit yang berisi nanah dan terasa nyeri.</p>
+            <ul>
+              <li><i class="bi bi-check"></i> Timbulnya kemerahan pada area infeksi dan benjolan keras.</li>
+              <li><i class="bi bi-check"></i> Pada area bisul timbul rasa nyeri.</li>
+              <li><i class="bi bi-check"></i> Kulit di sekitar bisul ikut terinfeksi.</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    </div>
+    <!-- End About Us Section -->
+
+    <!-- ======= About Us Section ======= -->
+    <div id="some_id4" align="center" style="display: none;">
+      <section id="about" class="about pt-0">
+        <div class="container" data-aos="fade-up">
+
+          <div class="row gy-4">
+            <div class="col-lg-6 content order-last  order-lg-first">
+              <h3>Penyebab</h3>
+              <p>
+                Infeksi dari bakteri Staphylococcus aureus merupakan Penyebab utama bisul pada folikel rambut. Pada sebagian orang, bakteri ini ditemukan di kulit dan di dalam lapisan hidung tanpa menimbulkan gangguan.
+              </p>
+              <ul>
+                <li data-aos="fade-up" data-aos-delay="100">
+                  <i class="fas fa-handshake"></i>
+                  <div>
+                    <h5>Melakukan Kontak Langsung</h5>
+                    <p>Kontak langsung seperti berjabat tangan dengan penderita bisa menjadi salah satu penyebab</p>
+                  </div>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="200">
+                   <i class="fas fa-exclamation"></i>
+                  <div>
+                    <h5>Tidak menjaga kebersihan kulit</h5>
+                    <p>Kulit yang kotor dan lembab bisa memicu pertumbuhan bakteri</p>
+                  </div>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="300">
+                 <i class="fas fa-spider"></i>
+                  <div>
+                    <h5>Gigitan Serangga atau Luka Gores</h5>
+                    <p>Infeksi ini bisa terjadi ketika bakteri masuk ke folikel lewat luka gores atau gigitan serangga.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-6 content order-last  order-lg-first">
+              <h3>Masukan & Tips</h3>
+              <p>
+                Anda bisa melakukan beberapa tips ini apabila bisul sudah terjadi, seperti:
+              </p>
+              <ul>
+                <li data-aos="fade-up" data-aos-delay="100">
+                  <i class="fas fa-box-tissue"></i>
+                  <div>
+                    <h5>Mengompres bisul dengan air hangat</h5>
+                    <p>Lakukanlah setidaknya tiga kali sehari. Langkah ini akan mengurangi rasa sakit sekaligus mendorong nanah untuk berkumpul di puncak benjolan.</p>
+                  </div>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="200">
+                  <i class="fas fa-soap"></i>
+                  <div>
+                    <h5>Bersihkan bisul</h5>
+                    <p>Bersihkan dengan kain kasa dengan alkohol dan sabun antibakteri. Membubuhkan obat salep dan melapisi bisul yang pecah dengan kain kasa steril juga perlu dilakukan.</p>
+                  </div>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="300">
+                 <i class="fas fa-band-aid"></i>
+                  <div>
+                    <h5>Gantilah perban sesering mungkin</h5>
+                    <p>Gantilah perban dari 2 hingga 3 kali sehari agar tetap bersih dan Steril.</p>
+                  </div>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="300">
+                  <i class="fas fa-exclamation-triangle"></i>
+                  <div>
+                    <h5>Hindari disentuh atau Dipecahkan</h5>
+                    <p>Hindari menyentuh atau menggosok bisul supaya bisul tidak semakin parah. Komunikasikan dengan dokter apabila nanah perlu dikeluarkan</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </div> 
+  <!-- End About Us Section -->
+
+  <!-- ======= Kudis Penjelasan ======= -->
+  <div id="penjelasan_kudis" style="display: none;">
+  <section id="features" class="features">
+    <div class="row gy-4 align-items-center features-item" data-aos="fade-up">
+          <div class="col-md-5" align="center">
+            <img src={{ url_for('static', filename='/images/kudis.jpg') }} width="400px" height="100px" class="img-fluid img-thumbnail" alt="">
+          </div>
+          <div class="col-md-7">
+            <h3>Kudis</h3>
+            <p>Kudis adalah kondisi yang ditandai dengan gatal di kulit. Gatal ini dibarengi dengan kemunculan ruam berbintik yang menyerupai jerawat atau lepuhan kecil bersisik. Kondisi ini terjadi karena tungau yang hidup dan bersarang di kulit.</p>
+            <ul>
+              <li><i class="bi bi-check"></i> Gejala kudis yang paling umum adalah rasa gatal yang amat sangat di area tungau bersarang.</li>
+              <li><i class="bi bi-check"></i> Ditandai dengan rasa gatal hebat di kulit, terutama di malam hari sehingga membuat penderitanya terbangun di malam hari.</li>
+              <li><i class="bi bi-check"></i> Timbul ruam bintik-bintik menyerupai jerawat yang membentuk garis, atau juga dapat berupa lepuhan kecil dan bersisik.</li>
+            </ul>
+          </div>
+    </div>
+  </section>
+  </div>
+    <!-- End About Us Section -->
+
+    <!-- ======= About Us Section ======= -->
+    <div id="some_id1" align="center" style="display: none;">
+      <section id="about" class="about pt-0">
+        <div class="container" data-aos="fade-up">
+
+          <div class="row gy-4">
+            <div class="col-lg-6 content order-last  order-lg-first">
+              <h3>Penyebab</h3>
+              <p>
+                Kudis atau scabies merupakan penyakit yang mudah menular, baik melalui kontak langsung maupun tidak langsung. Kudis disebabkan oleh tungau Sarcoptes scabiei. Tungau ini mengeluarkan air liur, telur, dan kotoran.
+              </p>
+              <ul>
+                <li data-aos="fade-up" data-aos-delay="100">
+                  <i class="fas fa-bed"></i>
+                  <div>
+                    <h5>Sprei, pakaian, handuk, dan barang pribadi lainnya yang kotor</h5>
+                    <p>Barang-barang tersebut bisa saja menjadi sarang dari tungau ini</p>
+                  </div>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="200">
+                  <i class="fas fa-handshake"></i>
+                  <div>
+                    <h5>Berjabat tangan atau melakukan kontak dengan penderita</h5>
+                    <p>Penyakit mudah menular, sehingga melakukan kontak dengan penderita bisa saja menjadi penyebab dari penyakit ini</p>
+                  </div>
+                </li>
+                <!-- <li data-aos="fade-up" data-aos-delay="300">
+                  <i class="bi bi-egg-fried"></i>
+                  <div>
+                    <h5>Pilih Makanan Sehat</h5>
+                    <p>Et velit et eos maiores est tempora et quos dolorem autem tempora incidunt maxime veniam</p>
+                  </div>
+                </li> -->
+              </ul>
+            </div>
+            <div class="col-lg-6 content order-last  order-lg-first">
+              <h3>Masukan & Tips</h3>
+              <p>
+                Untuk menghindari penyakit ini terjadi, anda bisa melakukan beberapa tips ini seperti:
+              </p>
+              <ul>
+                <li data-aos="fade-up" data-aos-delay="100">
+                  <i class="fas fa-tshirt"></i>
+                  <div>
+                    <h5>Membersihkan pakaian dengan benar</h5>
+                    <p>Gunakan air sabun panas untuk mencuci semua pakaian, handuk, dan seprai yang digunakan dalam waktu tiga hari sebelum perawatan dilakukan. Keringkan pakaian tersebut dengan panas tinggi.</p>
+                  </div>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="200">
+                  <i class="fas fa-retweet"></i>
+                  <div>
+                    <h5>Hindari menggunakan barang atau berbagi pakaian/handuk dengan orang lain</h5>
+                    <p>Cobalah untuk membawa pakaian/handuk sendiri sehingga terhindar dari penyebaran penyakit</p>
+                  </div>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="300">
+                  <i class="fas fa-home"></i>
+                  <div>
+                    <h5>Bersihkan Lingkungan sekitar</h5>
+                    <p>Rutin membersihkan lingkungan sekitar seperti tempat tidur, kamar mandi dan lain sebagainya untuk menghindari tungau berkembang biak</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </div>
+  <!-- End About Us Section -->
+
+  <!-- ======= Kurap Penjelasan ======= -->
+  <div id="penjelasan_kurap" style="display: none;">
+  <section id="features" class="features">
+    <div class="row gy-4 align-items-center features-item" data-aos="fade-up">
+          <div class="col-md-5" align="center">
+            <img src={{ url_for('static', filename='/images/kurap.jpg') }} width="400px" height="100px" class="img-fluid img-thumbnail" alt="">
+          </div>
+          <div class="col-md-7">
+            <h3>Kurap</h3>
+            <p>Kurap adalah infeksi jamur pada kulit yang mengakibatkan munculnya ruam melingkar berwarna merah (ringworm). Kurap menyerang beberapa bagian tubuh, seperti kepala, tangan wajah, kaki, bahkan hingga ke area selangkangan.</p>
+            <ul>
+              <li><i class="bi bi-check"></i> Bentuk kurap sendiri mirip seperti cincin atau cacing yang melingkar.</li>
+              <li><i class="bi bi-check"></i> Kurap dapat tumbuh, membesar, dan menyebar.</li>
+              <li><i class="bi bi-check"></i> Rasa gatal hebat pada bagian tersebut.</li>
+            </ul>
+          </div>
+    </div>
+  </section>
+  </div>
+    <!-- End About Us Section -->
+
+
+  <!-- ======= About Us Section ======= -->
+    <div id="some_id2" align="center" style="display: none;">
+      <section id="about" class="about pt-0">
+        <div class="container" data-aos="fade-up">
+
+          <div class="row gy-4">
+            <div class="col-lg-6 content order-last  order-lg-first">
+              <h3>Penyebab</h3>
+              <p>
+                Penyebab kurap adalah jamur yang tumbuh dan berkembang biak dengan cepat pada kulit manusia. Setidaknya, terdapat tiga jenis jamur yang bisa menyebabkan penyakit kurap, yaitu Trichophyton, Epidermophyton, dan Microsporum.
+              </p>
+              <ul>
+                <li data-aos="fade-up" data-aos-delay="100">
+                  <i class="fas fa-handshake"></i>
+                  <div>
+                    <h5>Melakukan kontak langsung dengan pengidap kurap</h5>
+                    <p>Karena jamur yang tumbuh dan berkembang biak dengan cepat pada kulit manusia sehingga melakukan kontak langsung bisa menyebabkan jamur berpindah</p>
+                  </div>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="200">
+                  <i class="fas fa-thermometer-full"></i>
+                  <div>
+                    <h5>Sering beraktivitas di cuaca panas dan lembap</h5>
+                    <p>Tempat yang lembab, seperti selangkangan, merupakan tempat yang memang baik untuk jamur berkembang, sehingga harus selalu dijaga kebersihannya</p>
+                  </div>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="300">
+                  <i class="fas fa-retweet"></i>
+                  <div>
+                    <h5>Sering menggunakan barang pribadi bekas pakai secara bersamaan</h5>
+                    <p>Barang yang sering digunakan alangkah lebih baik jika dibersihkan secara rutin untuk menghindari jamur berkembang</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-6 content order-last  order-lg-first">
+              <h3>Masukan & Tips</h3>
+              <p>
+               Untuk menghindari penyakit ini terjadi, anda bisa melakukan beberapa tips ini seperti:
+              </p>
+              <ul>
+                <li data-aos="fade-up" data-aos-delay="100">
+                 <i class="fas fa-child"></i>
+                  <div>
+                    <h5>Keringkan area tubuh secara menyeluruh setelah mandi</h5>
+                    <p>Pastikan badan kering setelah mandi untuk menghindari kelembapan pada tubuh</p>
+                  </div>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="200">
+                  <i class="fas fa-tshirt"></i>
+                  <div>
+                    <h5>Gunakan pakaian longgar di daerah yang berpotensi terkena kurap</h5>
+                    <p>Pakaian yang terlalu ketat dapat meningkatkan suhu tubuh dan membuat lebih banyak berkeringat, yang merupakan jenis lingkungan yang disukai bakteri</p>
+                  </div>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="300">
+                  <i class="fas fa-soap"></i>
+                  <div>
+                    <h5>Membersihkan pakaian dengan benar</h5>
+                    <p>Gunakan air sabun panas untuk mencuci semua pakaian, handuk, dan seprai yang digunakan dalam waktu tiga hari sebelum perawatan dilakukan. Keringkan pakaian tersebut dengan panas tinggi.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </div> 
+  <!-- End About Us Section -->
+
+  <!-- ======= Panu Penjelasan ======= -->
+  <div id="penjelasan_panu" style="display: none;">
+  <section id="features" class="features">
+    <div class="row gy-4 align-items-center features-item" data-aos="fade-up">
+          <div class="col-md-5" align="center">
+            <img src={{ url_for('static', filename='/images/panu.jpg') }} width="400px" height="100px" class="img-fluid img-thumbnail" alt="">
+          </div>
+          <div class="col-md-7">
+            <h3>Panu</h3>
+            <p>Panu adalah infeksi jamur pada kulit yang disebabkan oleh golongan jamur Malassezia. Infeksi jamur ini menyebabkan gangguan pada pigmen kulit sehingga menimbulkan bercak yang berwarna lebih terang atau lebih gelap di permukaan kulit.</p>
+            <ul>
+              <li><i class="bi bi-check"></i> Area kulit yang terkena panu tampak lebih gelap atau terang</li>
+              <li><i class="bi bi-check"></i> Kulit terasa kering, gatal, dan mungkin bersisik</li>
+              <li><i class="bi bi-check"></i> Gatal ringan</li>
+            </ul>
+          </div>
+    </div>
+  </section>
+  </div>
+    <!-- End About Us Section -->
+
+    <!-- ======= About Us Section ======= -->
+    <div id="some_id3" align="center" style="display: none;">
+      <section id="about" class="about pt-0">
+        <div class="container" data-aos="fade-up">
+
+          <div class="row gy-4">
+            <div class="col-lg-6 content order-last  order-lg-first">
+              <h3>Penyebab</h3>
+              <p>
+                Penyebab utama panu adalah perkembangan jamur malassezia pada kulit. Jamur penyebab panu bisa ditemukan pada kulit yang sehat, dan merupakan flora yang normal. Jamur ini baru akan menyebabkan masalah saat tumbuh secara abnormal.
+              </p>
+              <ul>
+                <li data-aos="fade-up" data-aos-delay="100">
+                  <i class="fas fa-tshirt"></i>
+                  <div>
+                    <h5>Malas Ganti Baju</h5>
+                    <p>Baju yang digunakan secara berkali-kali akan memiliki banyak keringat dan kotoran. Kebiasaan ini bakal memicu tumbuhnya jamur penyebab panu</p>
+                  </div>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="200">
+                  <i class="fas fa-bath"></i>
+                  <div>
+                    <h5>Jarang Mandi</h5>
+                    <p>Kondisi kulit yang penuh keringat bakal menjadi tempat yang nyaman untuk jamur berkembang dan menyebar, sehingga menimbulkan ruam panu. Maka dari itu mandi bisa mencegah jamur untuk berkembang</p>
+                  </div>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="300">
+                  <i class="fas fa-tint"></i>
+                  <div>
+                    <h5>Menggunakan Produk Kulit Berbahan Minyak</h5>
+                    <p>Penggunaan produk kulit berbahan minyak bisa membuat kulit memiliki minyak berlebih. Efek dari kelebihan minyak dapat mengakibatkan bercak kulit hitam atau putih yang gatal tumbuh di kulit</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-6 content order-last  order-lg-first">
+              <h3>Masukan & Tips</h3>
+              <p>
+                Untuk menghindari penyakit ini terjadi, anda bisa melakukan beberapa tips ini seperti:
+              </p>
+              <ul>
+                <li data-aos="fade-up" data-aos-delay="100">
+                  <i class="fas fa-shower"></i>
+                  <div>
+                    <h5>Jaga kebersihan tubuh dengan rutin mandi</h5>
+                    <p>Dengan rutin mandi setelah beraktifitas atau berkeringat lebih, bisa menghindari munculnya panu</p>
+                  </div>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="200">
+                  <i class="fas fa-exclamation"></i>
+                  <div>
+                    <h5>Hindari penggunaan produk yang sebabkan kulit memproduksi minyak berlebihan</h5>
+                    <p>Cukup gunakan produk-produk yang sewajarnya dan tidak berlebihan</p>
+                  </div>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="300">
+                  <i class="fas fa-tshirt"></i>
+                  <div>
+                    <h5>Hindari menggunakan pakaian yang terlalu ketat</h5>
+                    <p>Pakaian yang terlalu ketat dapat meningkatkan suhu tubuh dan membuat lebih banyak berkeringat, yang merupakan jenis lingkungan yang disukai bakteri</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </div>
+  <!-- End About Us Section -->
+    </div><!-- End Horizontal Pricing Section -->
+
+    <!-- ======= About Us Section ======= -->
+    <div id="some_id5" align="center" style="display: none;">
+      <section id="about" class="about pt-0">
+        <div class="container" data-aos="fade-up">
+
+          <div class="row gy-4">
+            <div class="col-lg-6 position-relative align-self-start order-lg-last order-first">
+              <img src={{ url_for('static', filename='/img/skin.jpg') }} width="300px" height="600px" class="img-fluid img-thumbnail" alt="">
+              <!-- <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox play-btn"></a> -->
+            </div>
+            <div class="col-lg-6 content order-last  order-lg-first">
+              <h3>Penyakit tidak terdeteksi</h3>
+              <p>
+                Penyakit tidak terdeteksi, namun meski begitu, merawat kesehatan kulit sebenarnya mudah dan harus dilakukan, cukup sederhana dan perlu dilakukan selagi sehat. Berikut beberapa cara yang bisa dilakukan agar kulit tetap sehat:
+              </p>
+              <ul>
+                <li data-aos="fade-up" data-aos-delay="100">
+                 <i class="fas fa-bath"></i>
+                  <div>
+                    <h5>Rutin bersihkan kulit</h5>
+                    <p>Rutin untuk bersihkan kulit seperti mandi bisa menghindari penyakit kulit atau gatal-gatal timbul</p>
+                  </div>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="200">
+                  <i class="fas fa-apple-alt"></i>
+                  <div>
+                    <h5>Konsumsi buah dan sayur</h5>
+                    <p>Sudah bukan rahasia umum bahwa buah dan sayur memang memiliki banyak nutrisi untuk tubuh. Mulai dari vitamin C pada jeruk atau brokoli untuk mencegah kerutan pada kulit dan vitamin E pada anggur atau tomat yang bisa mencegah kerusakan sel kulit</p>
+                  </div>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="300">
+                <i class="fas fa-angry"></i>
+                  <div>
+                    <h5>Hindari Stres</h5>
+                    <p>Stres yang terus-menerus bisa memicu masalah pada kulit loh, seperti jerawat pada wajah, eksim dan psoriasis</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </div>
+  <!-- End About Us Section -->
+
+  <!-- Rekomendasi Obat -->
+
+   <div id="obatBiduran" align="center" style="display: none;">
+    <div class="container-fluid pt-5">
+        <div class="text-center mb-4">
+            <h2 class="section-title px-5" style="font-family: Poppins;"><span class="px-2">-- Rekomendasi Obat --</span></h2>
+        </div>
+
+        <div class="row d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+            
+            <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                <div class="card product-item border-0 mb-4">
+                    
+                    <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                       <img class="img-fluid w-100" src={{ url_for('static', filename='/FotoObat/Biduran/Claritin.png') }} alt="" width = "150px" height = "180px"/>
+                    </div>
+                    
+                    <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                        <h6 class="text-truncate mb-3"> Claritin 10 mg </h6>
+                        <div class="d-flex justify-content-center">
+                            <h6>Rp69.800 - Rp113.600</h6><h6 class="text-muted ml-2"></h6>
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer d-flex justify-content-between bg-light border">
+                        <a href = "#" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-eye text-primary mr-1"></i> Lihat Detail</a>
+                    </div>  
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                <div class="card product-item border-0 mb-4">
+                    
+                    <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                       <img class="img-fluid w-100" src={{ url_for('static', filename='/FotoObat/Biduran/Destavell.png') }} alt="" width = "150px" height = "180px"/>
+                    </div>
+                    
+                    <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                        <h6 class="text-truncate mb-3"> Destavell 5 mg </h6>
+                        <div class="d-flex justify-content-center">
+                            <h6>Rp57.900 - Rp96.800</h6><h6 class="text-muted ml-2"></h6>
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer d-flex justify-content-between bg-light border">
+                        <a href = "#" data-toggle="modal" data-target="#exampleModal2"><i class="fas fa-eye text-primary mr-1"></i> Lihat Detail</a>
+                    </div>  
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                <div class="card product-item border-0 mb-4">
+                    
+                    <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                       <img class="img-fluid w-100" src={{ url_for('static', filename='/FotoObat/Biduran/Lexahist.png') }} alt="" width = "150px" height = "180px"/>
+                    </div>
+                    
+                    <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                        <h6 class="text-truncate mb-3"> Lexahist 4mg Tablet </h6>
+                        <div class="d-flex justify-content-center">
+                            <h6>Rp1.100 - Rp1.600</h6><h6 class="text-muted ml-2"></h6>
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer d-flex justify-content-between bg-light border">
+                         <a href = "#" data-toggle="modal" data-target="#exampleModal3"><i class="fas fa-eye text-primary mr-1"></i> Lihat Detail</a>
+                    </div>  
+                </div>
+            </div>
+    </div>
+  </div>
+</div>
+<!-- Bates Obat Biduran -->
+
+<!-- Rekomendasi Obat Bisul-->
+   <div id="obatBisul" align="center" style="display: none;">
+    <div class="container-fluid pt-5">
+        <div class="text-center mb-4">
+            <h2 class="section-title px-5" style="font-family: Poppins;"><span class="px-2">-- Rekomendasi Obat --</span></h2>
+        </div>
+
+        <div class="row d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+            
+            <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                <div class="card product-item border-0 mb-4">
+                    
+                    <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                       <img class="img-fluid w-100" src={{ url_for('static', filename='/FotoObat/Bisul/Ichtyol.jpg') }} alt="" width = "150px" height = "180px"/>
+                    </div>
+                    
+                    <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                        <h6 class="text-truncate mb-3"> Salep Ichtyol 15g </h6>
+                        <div class="d-flex justify-content-center">
+                            <h6>Rp6.000 - Rp9.000</h6><h6 class="text-muted ml-2"></h6>
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer d-flex justify-content-between bg-light border">
+                        <a href = "#" data-toggle="modal" data-target="#exampleBisul1"><i class="fas fa-eye text-primary mr-1"></i> Lihat Detail</a>
+                    </div>  
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                <div class="card product-item border-0 mb-4">
+                    
+                    <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                       <img class="img-fluid w-100" src={{ url_for('static', filename='/FotoObat/Kurap/Nosib.png') }} alt="" width = "150px" height = "180px"/>
+                    </div>
+                    
+                    <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                        <h6 class="text-truncate mb-3"> Salep Nosib 6g </h6>
+                        <div class="d-flex justify-content-center">
+                            <h6>Rp7.400 - Rp12.000</h6><h6 class="text-muted ml-2"></h6>
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer d-flex justify-content-between bg-light border">
+                        <a href = "#" data-toggle="modal" data-target="#exampleKurap3"><i class="fas fa-eye text-primary mr-1"></i> Lihat Detail</a>
+                    </div>  
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                <div class="card product-item border-0 mb-4">
+                    
+                    <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                       <img class="img-fluid w-100" src={{ url_for('static', filename='/FotoObat/Bisul/Gentacimin.jpg') }} alt="" width = "150px" height = "180px"/>
+                    </div>
+                    
+                    <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                        <h6 class="text-truncate mb-3"> Gentamicin Salep 5gram </h6>
+                        <div class="d-flex justify-content-center">
+                            <h6>Rp3.000 - Rp5.000</h6><h6 class="text-muted ml-2"></h6>
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer d-flex justify-content-between bg-light border">
+                         <a href = "#" data-toggle="modal" data-target="#exampleBisul2"><i class="fas fa-eye text-primary mr-1"></i> Lihat Detail</a>
+                    </div>  
+                </div>
+            </div>
+    </div>
+  </div>
+</div>
+<!-- Bates Obat Bisul -->
+
+   <div id="obatKudis" align="center" style="display: none;">
+    <div class="container-fluid pt-5">
+        <div class="text-center mb-4">
+            <h2 class="section-title px-5" style="font-family: Poppins;"><span class="px-2">-- Rekomendasi Obat --</span></h2>
+        </div>
+
+        <div class="row d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+            
+            <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                <div class="card product-item border-0 mb-4">
+                    
+                    <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                       <img class="img-fluid w-100" src={{ url_for('static', filename='/FotoObat/Kudis/PiKang.png') }} alt="" width = "150px" height = "180px"/>
+                    </div>
+                    
+                    <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                        <h6 class="text-truncate mb-3"> Pi Kang Shuang Cream 5 g </h6>
+                        <div class="d-flex justify-content-center">
+                            <h6>Rp11.600 - Rp18.800</h6><h6 class="text-muted ml-2"></h6>
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer d-flex justify-content-between bg-light border">
+                        <a href = "#" data-toggle="modal" data-target="#exampleKudis"><i class="fas fa-eye text-primary mr-1"></i> Lihat Detail</a>
+                    </div>  
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                <div class="card product-item border-0 mb-4">
+                    
+                    <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                       <img class="img-fluid w-100" src={{ url_for('static', filename='/FotoObat/Kudis/Scabimite.png') }} alt="" width = "150px" height = "180px"/>
+                    </div>
+                    
+                    <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                        <h6 class="text-truncate mb-3"> Scabimite 5% Cream </h6>
+                        <div class="d-flex justify-content-center">
+                            <h6>Rp42.000 - Rp66.100</h6><h6 class="text-muted ml-2"></h6>
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer d-flex justify-content-between bg-light border">
+                        <a href = "#" data-toggle="modal" data-target="#exampleKudis2"><i class="fas fa-eye text-primary mr-1"></i> Lihat Detail</a>
+                    </div>  
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                <div class="card product-item border-0 mb-4">
+                    
+                    <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                       <img class="img-fluid w-100" src={{ url_for('static', filename='/FotoObat/Kudis/Scadid.png') }} alt="" width = "150px" height = "180px"/>
+                    </div>
+                    
+                    <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                        <h6 class="text-truncate mb-3"> Scacid Cream </h6>
+                        <div class="d-flex justify-content-center">
+                            <h6>Rp40.100 - Rp58.400</h6><h6 class="text-muted ml-2"></h6>
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer d-flex justify-content-between bg-light border">
+                       <a href = "#" data-toggle="modal" data-target="#exampleKudis3"><i class="fas fa-eye text-primary mr-1"></i> Lihat Detail</a>
+                    </div>  
+                </div>
+            </div>
+    </div>
+  </div>
+</div>
+  <!-- Bates Obat Kudis -->
+
+   <div id="obatKurap" align="center" style="display: none;">
+    <div class="container-fluid pt-5">
+        <div class="text-center mb-4">
+            <h2 class="section-title px-5" style="font-family: Poppins;"><span class="px-2">-- Rekomendasi Obat --</span></h2>
+        </div>
+
+        <div class="row d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+            
+            <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                <div class="card product-item border-0 mb-4">
+                    
+                    <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                       <img class="img-fluid w-100" src={{ url_for('static', filename='/FotoObat/Kurap/Fungiderm.png') }} alt="" width = "150px" height = "180px"/>
+                    </div>
+                    
+                    <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                        <h6 class="text-truncate mb-3"> Fungiderm 1% Cream </h6>
+                        <div class="d-flex justify-content-center">
+                            <h6>Rp13.900 - Rp19.000</h6><h6 class="text-muted ml-2"></h6>
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer d-flex justify-content-between bg-light border">
+                        <a href = "#" data-toggle="modal" data-target="#exampleKurap"><i class="fas fa-eye text-primary mr-1"></i> Lihat Detail</a>
+                    </div>  
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                <div class="card product-item border-0 mb-4">
+                    
+                    <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                       <img class="img-fluid w-100" src={{ url_for('static', filename='/FotoObat/Kurap/Kalpanax.png') }} alt="" width = "150px" height = "180px"/>
+                    </div>
+                    
+                    <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                        <h6 class="text-truncate mb-3"> Kalpanax Krim 10 g </h6>
+                        <div class="d-flex justify-content-center">
+                            <h6>Rp19.900 - Rp27.300</h6><h6 class="text-muted ml-2"></h6>
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer d-flex justify-content-between bg-light border">
+                        <a href = "#" data-toggle="modal" data-target="#exampleKurap2"><i class="fas fa-eye text-primary mr-1"></i> Lihat Detail</a>
+                    </div>  
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                <div class="card product-item border-0 mb-4">
+                    
+                    <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                       <img class="img-fluid w-100" src={{ url_for('static', filename='/FotoObat/Kurap/Nosib.png') }} alt="" width = "150px" height = "180px"/>
+                    </div>
+                    
+                    <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                        <h6 class="text-truncate mb-3"> Salep Nosib 6 g </h6>
+                        <div class="d-flex justify-content-center">
+                            <h6>Rp7.400 - Rp12.000</h6><h6 class="text-muted ml-2"></h6>
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer d-flex justify-content-between bg-light border">
+                        <a href = "#" data-toggle="modal" data-target="#exampleKurap3"><i class="fas fa-eye text-primary mr-1"></i> Lihat Detail</a>
+                    </div>  
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                <div class="card product-item border-0 mb-4">
+                    
+                    <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                       <img class="img-fluid w-100" src={{ url_for('static', filename='/FotoObat/Kurap/SeanZalf.png') }} alt="" width = "150px" height = "180px"/>
+                    </div>
+                    
+                    <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                        <h6 class="text-truncate mb-3"> Sean Zalf Salep 6 g </h6>
+                        <div class="d-flex justify-content-center">
+                            <h6>Rp1.800 - Rp8.600</h6><h6 class="text-muted ml-2"></h6>
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer d-flex justify-content-between bg-light border">
+                        <a href = "#" data-toggle="modal" data-target="#exampleKurap4"><i class="fas fa-eye text-primary mr-1"></i> Lihat Detail</a>
+                    </div>  
+                </div>
+            </div>
+    </div>
+  </div>
+</div>
+  <!-- Bates Obat Kurap -->
+
+   <div id="obatPanu" align="center" style="display: none;">
+    <div class="container-fluid pt-5">
+        <div class="text-center mb-4">
+            <h2 class="section-title px-5" style="font-family: Poppins;"><span class="px-2">-- Rekomendasi Obat --</span></h2>
+        </div>
+
+        <div class="row d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+            
+            <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                <div class="card product-item border-0 mb-4">
+                    
+                    <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                       <img class="img-fluid w-100" src={{ url_for('static', filename='/FotoObat/Panu/Canesten.png') }} alt="" width = "150px" height = "180px"/>
+                    </div>
+                    
+                    <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                        <h6 class="text-truncate mb-3"> Canesten Cream </h6>
+                        <div class="d-flex justify-content-center">
+                            <h6>Rp18.700 - Rp30.300</h6><h6 class="text-muted ml-2"></h6>
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer d-flex justify-content-between bg-light border">
+                         <a href = "#" data-toggle="modal" data-target="#examplePanu"><i class="fas fa-eye text-primary mr-1"></i> Lihat Detail</a>
+                    </div>  
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                <div class="card product-item border-0 mb-4">
+                    
+                    <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                       <img class="img-fluid w-100" src={{ url_for('static', filename='/FotoObat/Panu/Daktarin.png') }} alt="" width = "150px" height = "180px"/>
+                    </div>
+                    
+                    <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                        <h6 class="text-truncate mb-3"> Daktarin Cream </h6>
+                        <div class="d-flex justify-content-center">
+                            <h6>Rp36.100 - Rp48.300</h6><h6 class="text-muted ml-2"></h6>
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer d-flex justify-content-between bg-light border">
+                        <a href = "#" data-toggle="modal" data-target="#examplePanu2"><i class="fas fa-eye text-primary mr-1"></i> Lihat Detail</a>
+                    </div>  
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                <div class="card product-item border-0 mb-4">
+                    
+                    <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                       <img class="img-fluid w-100" src={{ url_for('static', filename='/FotoObat/Panu/Kulit88.png') }} alt="" width = "150px" height = "180px"/>
+                    </div>
+                    
+                    <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                        <h6 class="text-truncate mb-3"> Salep Kulit 88 </h6>
+                        <div class="d-flex justify-content-center">
+                            <h6>Rp9.800 - Rp18.800</h6><h6 class="text-muted ml-2"></h6>
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer d-flex justify-content-between bg-light border">
+                        <a href = "#" data-toggle="modal" data-target="#examplePanu3"><i class="fas fa-eye text-primary mr-1"></i> Lihat Detail</a>
+                    </div>  
+                </div>
+            </div>
+    </div>
+  </div>
+</div>
+  <!-- Bates Obat Panu -->
+
+<!-- Obat Biduran -->
+<!-- Modal Claritin -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Detail Obat</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><i class="fa fa-close"></i></span>
+          </button>
+      </div>
+            <div class="modal-body">
+              <div class="row g-0">
+                <div class="col-md-8 border-right">
+                  <div class="status p-3">
+                    <table class="table table-borderless">
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <b><span class="heading d-block">Kategori</span></b>
+                              <span class="subheadings">Biduran</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Komposisi</span>
+                              <span class="subheadings">Setiap tablet mengandung 10 mg micronized Loratadine.</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Rating</span>
+                              <span class="subheadings"><i class="dots"></i>5</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Dosis</span>
+                              <span class="subheadings">PENGGUNAAN OBAT INI HARUS SESUAI DENGAN PETUNJUK DOKTER. Dewasa dan anak usia lebih dari 12 tahun : 10 mg sekali sehari atau 5 mg, 2 x sehari. Anak usia 2-12 tahun : - BB kurang dari 30 kg: 5 mg, 1 x sehari. - BB lebih dari 30: 10 mg, 1 x sehari.</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Indikasi Umum</span>
+                              <span class="subheadings">INFORMASI OBAT INI HANYA UNTUK KALANGAN MEDIS. Obat ini digunakan untuk meredakan gejala alergi seperti hay fever, biduran atau urtikaria.</span>
+                            </div>
+                          </td>
+                          <td>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Aturan Pakai</span>
+                              <span class="subheadings">Dapat dikonsumsi sebelum, bersama atau sesudah makan.</span>
+                            </div>
+                          </td>  
+                          <td colspan="2">
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Deskripsi</span>
+                              <span class="subheadings">CLARITIN TABLET merupakan obat yang mengandung Loratadin. Loratadin merupakan turunan piperidin, yakni antihistamin non-sedatif kerja panjang yang secara selektif menghambat reseptor histamin H1 pada sel efektor. Loratadin digunakan untuk gejala alergi seperti hay fever, urtikaria. Dalam menggunakan obat ini HARUS SESUAI DENGAN PETUNJUK DOKTER.</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <!-- <div class="d-flex flex-column">
+                              <span class="heading d-block">Direction</span>
+                              <span class="d-block subheadings">Get direction by using</span>
+                              <span class="d-flex flex-row">
+                              <img src="https://img.icons8.com/color/100/000000/google-maps.png" class="rounded" width="30" />
+                              <img src="https://img.icons8.com/color/100/000000/pittsburgh-map.png" class="rounded" width="30" />
+                              </span>
+                            </div> -->
+                          </td>  
+                          <td colspan="2">
+                            <!-- <div class="d-flex flex-column">
+                              <span class="heading d-block">Hospital Gallary</span>
+                              <span class="d-flex flex-row gallery">
+                              <img src="https://i.imgur.com/VfRSLTm.jpg" width="50" class="rounded">
+                              <img src="https://i.imgur.com/jb9Cy5h.jpg" width="50" class="rounded">
+                              <img src="https://i.imgur.com/vBUz4HA.jpg" width="50" class="rounded">
+                              </span>
+                            </div> -->
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              <div class="col-md-4">
+                <div class="p-2 text-center">
+                  <div class="profile">
+                    <img src={{ url_for('static', filename='/FotoObat/Biduran/Claritin.png') }} width="250" class="mx-auto d-block">
+                    <span class="d-block mt-3 font-weight-bold">Claritin 10 mg</span>
+                  </div>
+                  <div class="about-doctor">
+                    <table class="table table-borderless">
+                      <!-- <tbody>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Education</span>
+                              <span class="subheadings">University of Harward</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Language</span>
+                              <span class="subheadings">Spanish, English</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Organisation</span>
+                              <span class="subheadings">Accupunture</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Specialist</span>
+                              <span class="subheadings">Accupunture</span>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody> -->
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>
+</div>
+<!-- End Modal -->
+
+
+
+<!-- Modal Destavell -->
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Detail Obat</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><i class="fa fa-close"></i></span>
+          </button>
+      </div>
+            <div class="modal-body">
+              <div class="row g-0">
+                <div class="col-md-8 border-right">
+                  <div class="status p-3">
+                    <table class="table table-borderless">
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <b><span class="heading d-block">Kategori</span></b>
+                              <span class="subheadings">Biduran</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Komposisi</span>
+                              <span class="subheadings">Desloratadine 5mg.</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Rating</span>
+                              <span class="subheadings"><i class="dots"></i>4.9</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Dosis</span>
+                              <span class="subheadings">Dewasa & anak >12th: 1 kali sehari 5mg. anak 6-11th: 1 kali sehari 2,5mg. anak 1-5th: 1 kali sehari 1,25mg.</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Indikasi Umum</span>
+                              <span class="subheadings">Meringankan gejala nasal dan non nasal rinitis alergi (musiman dan parenial). terapi simptomatik pruritus gatal disertai ruam, mengurangi jumlah dan besarnya lesi pada pasien urtikaria idiopatik gatal-gatal atau biduran Destavell juga bisa digunakan untuk mengobati biduran dan gatal-gatal pada orang dengan alergi kulit kronis.</span>
+                            </div>
+                          </td>
+                          <td>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Aturan Pakai</span>
+                              <span class="subheadings">Diminum tanpa atau dengan makanan.</span>
+                            </div>
+                          </td>  
+                          <td colspan="2">
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Deskripsi</span>
+                              <span class="subheadings">Destavell mengandung 5mg desloratadine. Destavell digunakan untuk meringankan gejala nasal dan non-nasal rinitis alergi (musiman dan parenial). Destavell juga dapat digunakan untuk terapi pada gejala pruritus (gatal disertai ruam), mengurangi jumlah dan besarnya lesi (jaringan abnormal) pada pasien urtikaria idiopatik gatal-gatal atau biduran yang terjadi bisa hingga 6 minggu.</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <!-- <div class="d-flex flex-column">
+                              <span class="heading d-block">Direction</span>
+                              <span class="d-block subheadings">Get direction by using</span>
+                              <span class="d-flex flex-row">
+                              <img src="https://img.icons8.com/color/100/000000/google-maps.png" class="rounded" width="30" />
+                              <img src="https://img.icons8.com/color/100/000000/pittsburgh-map.png" class="rounded" width="30" />
+                              </span>
+                            </div> -->
+                          </td>  
+                          <td colspan="2">
+                            <!-- <div class="d-flex flex-column">
+                              <span class="heading d-block">Hospital Gallary</span>
+                              <span class="d-flex flex-row gallery">
+                              <img src="https://i.imgur.com/VfRSLTm.jpg" width="50" class="rounded">
+                              <img src="https://i.imgur.com/jb9Cy5h.jpg" width="50" class="rounded">
+                              <img src="https://i.imgur.com/vBUz4HA.jpg" width="50" class="rounded">
+                              </span>
+                            </div> -->
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              <div class="col-md-4">
+                <div class="p-2 text-center">
+                  <div class="profile">
+                    <img src={{ url_for('static', filename='/FotoObat/Biduran/Destavell.png') }} width="250" class="mx-auto d-block">
+                    <span class="d-block mt-3 font-weight-bold">Destavell 5 mg</span>
+                  </div>
+                  <div class="about-doctor">
+                    <table class="table table-borderless">
+                      <!-- <tbody>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Education</span>
+                              <span class="subheadings">University of Harward</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Language</span>
+                              <span class="subheadings">Spanish, English</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Organisation</span>
+                              <span class="subheadings">Accupunture</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Specialist</span>
+                              <span class="subheadings">Accupunture</span>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody> -->
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>
+</div>
+<!-- End Modal -->
+<!-- Modal Lexahist -->
+<div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Detail Obat</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><i class="fa fa-close"></i></span>
+          </button>
+      </div>
+            <div class="modal-body">
+              <div class="row g-0">
+                <div class="col-md-8 border-right">
+                  <div class="status p-3">
+                    <table class="table table-borderless">
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <b><span class="heading d-block">Kategori</span></b>
+                              <span class="subheadings">Biduran</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Komposisi</span>
+                              <span class="subheadings">Cyproheptadine / Siproheptadin HCl 4 mg.</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Rating</span>
+                              <span class="subheadings"><i class="dots"></i>-</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Dosis</span>
+                              <span class="subheadings">Dewasa : 1-5 tablet sehari dalam dosis terbagi.</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Indikasi Umum</span>
+                              <span class="subheadings">Anti alergi sepeti urtikaria biduran kaligata, neurodermatitis, gatal-gatal dermatosis, rinitis alergika, alergi akibat gigitan serangga.</span>
+                            </div>
+                          </td>
+                          <td>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Aturan Pakai</span>
+                              <span class="subheadings">Dapat dikonsumsi sesudah atau sebelum makan.</span>
+                            </div>
+                          </td>  
+                          <td colspan="2">
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Deskripsi</span>
+                              <span class="subheadings">LEXAHIST 4MG TAB 20S mengandung zat aktif Ciproheptadine. Tersedia dalam bentuk tablet yang didistribusikan oleh Molex Ayus. Lexahist adalah obat yang digunakan untuk mengobati berbagai jenis alergi. Obat ini dapat digunakan sebagai anti alergi seperti urtikaria biduran kaligata, neurodermatitis, gatal-gatal dermatosis, rinitis alergika, alergi akibat gigitan serangga.</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <!-- <div class="d-flex flex-column">
+                              <span class="heading d-block">Direction</span>
+                              <span class="d-block subheadings">Get direction by using</span>
+                              <span class="d-flex flex-row">
+                              <img src="https://img.icons8.com/color/100/000000/google-maps.png" class="rounded" width="30" />
+                              <img src="https://img.icons8.com/color/100/000000/pittsburgh-map.png" class="rounded" width="30" />
+                              </span>
+                            </div> -->
+                          </td>  
+                          <td colspan="2">
+                            <!-- <div class="d-flex flex-column">
+                              <span class="heading d-block">Hospital Gallary</span>
+                              <span class="d-flex flex-row gallery">
+                              <img src="https://i.imgur.com/VfRSLTm.jpg" width="50" class="rounded">
+                              <img src="https://i.imgur.com/jb9Cy5h.jpg" width="50" class="rounded">
+                              <img src="https://i.imgur.com/vBUz4HA.jpg" width="50" class="rounded">
+                              </span>
+                            </div> -->
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              <div class="col-md-4">
+                <div class="p-2 text-center">
+                  <div class="profile">
+                    <img src={{ url_for('static', filename='/FotoObat/Biduran/Lexahist.png') }} width="250" class="mx-auto d-block">
+                    <span class="d-block mt-3 font-weight-bold">Lexahist 4mg Tablet</span>
+                  </div>
+                  <div class="about-doctor">
+                    <table class="table table-borderless">
+                     <!--  <tbody>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Education</span>
+                              <span class="subheadings">University of Harward</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Language</span>
+                              <span class="subheadings">Spanish, English</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Organisation</span>
+                              <span class="subheadings">Accupunture</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Specialist</span>
+                              <span class="subheadings">Accupunture</span>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody> -->
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>
+</div>
+<!-- End Modal -->
+<!-- End Obat Biduran -->
+
+<!-- Obat Kudis -->
+<!-- Modal PiKang -->
+<div class="modal fade" id="exampleKudis" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Detail Obat</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><i class="fa fa-close"></i></span>
+          </button>
+      </div>
+            <div class="modal-body">
+              <div class="row g-0">
+                <div class="col-md-8 border-right">
+                  <div class="status p-3">
+                    <table class="table table-borderless">
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <b><span class="heading d-block">Kategori</span></b>
+                              <span class="subheadings">Kudis</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Komposisi</span>
+                              <span class="subheadings">Tiap gram krim mengandung Miconazole Nitrate 10 mg, Neomycin Sulfate 4.6 mg, Triamcinolone Acetonide 1 mg.</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Rating</span>
+                              <span class="subheadings"><i class="dots"></i>5</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Dosis</span>
+                              <span class="subheadings">Oleskan pada daerah yang sakit, 2-3 kali sehari.</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Indikasi Umum</span>
+                              <span class="subheadings">INFORMASI OBAT INI HANYA UNTUK KALANGAN MEDIS. Mengobati penyakit kulit yang disebabkan oleh jamur seperti panu, kurap, dan kudis.</span>
+                            </div>
+                          </td>
+                          <td>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Aturan Pakai</span>
+                              <span class="subheadings">Oleskan secara tipis pada permukaan kulit yang sakit, maksimum pemakaian selama 1 minggu, bila tidak ada perubahan, segera konsultasikan kepada dokter Anda.</span>
+                            </div>
+                          </td>  
+                          <td colspan="2">
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Deskripsi</span>
+                              <span class="subheadings">PI KANG SHUANG merupakan obat yang mengandung miconazole nitrate, neomycin sulfate dan triamcinolone acetonide. Obat ini digunakan untuk mengobati penyakit kulit yang disebabkan oleh jamur seperti panu, kurap, dan kudis. Dalam penggunaan obat ini harus SESUAI DENGAN PETUNJUK DOKTER.</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <!-- <div class="d-flex flex-column">
+                              <span class="heading d-block">Direction</span>
+                              <span class="d-block subheadings">Get direction by using</span>
+                              <span class="d-flex flex-row">
+                              <img src="https://img.icons8.com/color/100/000000/google-maps.png" class="rounded" width="30" />
+                              <img src="https://img.icons8.com/color/100/000000/pittsburgh-map.png" class="rounded" width="30" />
+                              </span>
+                            </div> -->
+                          </td>  
+                          <td colspan="2">
+                            <!-- <div class="d-flex flex-column">
+                              <span class="heading d-block">Hospital Gallary</span>
+                              <span class="d-flex flex-row gallery">
+                              <img src="https://i.imgur.com/VfRSLTm.jpg" width="50" class="rounded">
+                              <img src="https://i.imgur.com/jb9Cy5h.jpg" width="50" class="rounded">
+                              <img src="https://i.imgur.com/vBUz4HA.jpg" width="50" class="rounded">
+                              </span>
+                            </div> -->
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              <div class="col-md-4">
+                <div class="p-2 text-center">
+                  <div class="profile">
+                    <img src={{ url_for('static', filename='/FotoObat/Kudis/PiKang.png') }} width="250" class="mx-auto d-block">
+                    <span class="d-block mt-3 font-weight-bold">Pi Kang Shuang Cream 5 g</span>
+                  </div>
+                  <div class="about-doctor">
+                    <table class="table table-borderless">
+                     <!--  <tbody>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Education</span>
+                              <span class="subheadings">University of Harward</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Language</span>
+                              <span class="subheadings">Spanish, English</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Organisation</span>
+                              <span class="subheadings">Accupunture</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Specialist</span>
+                              <span class="subheadings">Accupunture</span>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody> -->
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>
+</div>
+<!-- End Modal -->
+<!-- Modal Scabimite -->
+<div class="modal fade" id="exampleKudis2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Detail Obat</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><i class="fa fa-close"></i></span>
+          </button>
+      </div>
+            <div class="modal-body">
+              <div class="row g-0">
+                <div class="col-md-8 border-right">
+                  <div class="status p-3">
+                    <table class="table table-borderless">
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <b><span class="heading d-block">Kategori</span></b>
+                              <span class="subheadings">Kudis</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Komposisi</span>
+                              <span class="subheadings">Permethrin 5%.</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Rating</span>
+                              <span class="subheadings"><i class="dots"></i>4.9</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Dosis</span>
+                              <span class="subheadings">Sekali pemakaian pada malam hari. Oleskan secara merata pada seluruh permukaan kulit dari kepala sampai ke jari-jari kaki, terutama daerah belakang telinga, lipatan bokong dan sela-sela jari. Biarkan selama 8-12 jam, lalu cuci sampai bersih pada keesokan harinya. Jika selama pemakaian tidak sengaja tercuci, cream harus dioleskan kembali.</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Indikasi Umum</span>
+                              <span class="subheadings">Mengobati infeksi kulit skabies atau kudis yang disebabkan oleh Tungau (mite) Sarcoptes scabiei. Permethrin merupakan obat golongan Pyrethrin yang bekerja dengan cara membunuh tungau beserta telurnya.</span>
+                            </div>
+                          </td>
+                          <td>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Aturan Pakai</span>
+                              <span class="subheadings">Oleskan pada bagian yang membutuhkan.</span>
+                            </div>
+                          </td>  
+                          <td colspan="2">
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Deskripsi</span>
+                              <span class="subheadings">SCABIMITE CREAM adalah obat topikal yang mengandung Permethrin yang digunakan untuk mengobati infeksi kulit skabies yang disebabkan oleh Tungau (mite) Sarcoptes scabiei. Permethrin merupakan obat golongan Pyrethrin yang bekerja dengan cara membunuh tungau beserta telurnya. SCABIMITE CREAM digunakan dengan cara mengoleskan cream keseluruh tubuh termasuk wajah, leher, kulit kepala dan telinga.</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <!-- <div class="d-flex flex-column">
+                              <span class="heading d-block">Direction</span>
+                              <span class="d-block subheadings">Get direction by using</span>
+                              <span class="d-flex flex-row">
+                              <img src="https://img.icons8.com/color/100/000000/google-maps.png" class="rounded" width="30" />
+                              <img src="https://img.icons8.com/color/100/000000/pittsburgh-map.png" class="rounded" width="30" />
+                              </span>
+                            </div> -->
+                          </td>  
+                          <td colspan="2">
+                            <!-- <div class="d-flex flex-column">
+                              <span class="heading d-block">Hospital Gallary</span>
+                              <span class="d-flex flex-row gallery">
+                              <img src="https://i.imgur.com/VfRSLTm.jpg" width="50" class="rounded">
+                              <img src="https://i.imgur.com/jb9Cy5h.jpg" width="50" class="rounded">
+                              <img src="https://i.imgur.com/vBUz4HA.jpg" width="50" class="rounded">
+                              </span>
+                            </div> -->
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              <div class="col-md-4">
+                <div class="p-2 text-center">
+                  <div class="profile">
+                    <img src={{ url_for('static', filename='/FotoObat/Kudis/Scabimite.png') }} width="250" class="mx-auto d-block">
+                    <span class="d-block mt-3 font-weight-bold">Scabimite 5% Cream</span>
+                  </div>
+                  <div class="about-doctor">
+                    <table class="table table-borderless">
+                      <!-- <tbody>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Education</span>
+                              <span class="subheadings">University of Harward</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Language</span>
+                              <span class="subheadings">Spanish, English</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Organisation</span>
+                              <span class="subheadings">Accupunture</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Specialist</span>
+                              <span class="subheadings">Accupunture</span>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody> -->
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>
+</div>
+<!-- End Modal -->
+<!-- Modal Scadid -->
+<div class="modal fade" id="exampleKudis3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Detail Obat</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><i class="fa fa-close"></i></span>
+          </button>
+      </div>
+            <div class="modal-body">
+              <div class="row g-0">
+                <div class="col-md-8 border-right">
+                  <div class="status p-3">
+                    <table class="table table-borderless">
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <b><span class="heading d-block">Kategori</span></b>
+                              <span class="subheadings">Kudis</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Komposisi</span>
+                              <span class="subheadings">Permethrin 50 mg / gram.</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Rating</span>
+                              <span class="subheadings"><i class="dots"></i>-</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Dosis</span>
+                              <span class="subheadings">Oleskan Scacid krim secara merata pada seluruh permukaan kulit dari ujung kepala hingga ujung kaki, terutama area belakang telinga, lipatan bokong dan sela-sela jari Disarankan untuk dioleskan pada malam hari dan dibiarkan selama 8-12 jam, kemudian dicuci keesokan harinya.</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Indikasi Umum</span>
+                              <span class="subheadings">Mengobati kudis yang disebabkan oleh tungau yang menempel pada kulit dan kutu yang hidup di kulit kepala.</span>
+                            </div>
+                          </td>
+                          <td>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Aturan Pakai</span>
+                              <span class="subheadings">Oleskan tipis pada bagian yang membutuhkan.</span>
+                            </div>
+                          </td>  
+                          <td colspan="2">
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Deskripsi</span>
+                              <span class="subheadings">Scacid adalah sediaan obat dalam bentuk krim yang diproduksi oleh Guardian Pharmatama Indonesia. Scacid digunakan untuk mengobati infeksi kulit skabies atau kudis. Skabies adalah iritasi kulit yang disebabkan oleh infestasi tungau parasit kecil yang bersembunyi di permukaan kulit.</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <!-- <div class="d-flex flex-column">
+                              <span class="heading d-block">Direction</span>
+                              <span class="d-block subheadings">Get direction by using</span>
+                              <span class="d-flex flex-row">
+                              <img src="https://img.icons8.com/color/100/000000/google-maps.png" class="rounded" width="30" />
+                              <img src="https://img.icons8.com/color/100/000000/pittsburgh-map.png" class="rounded" width="30" />
+                              </span>
+                            </div> -->
+                          </td>  
+                          <td colspan="2">
+                            <!-- <div class="d-flex flex-column">
+                              <span class="heading d-block">Hospital Gallary</span>
+                              <span class="d-flex flex-row gallery">
+                              <img src="https://i.imgur.com/VfRSLTm.jpg" width="50" class="rounded">
+                              <img src="https://i.imgur.com/jb9Cy5h.jpg" width="50" class="rounded">
+                              <img src="https://i.imgur.com/vBUz4HA.jpg" width="50" class="rounded">
+                              </span>
+                            </div> -->
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              <div class="col-md-4">
+                <div class="p-2 text-center">
+                  <div class="profile">
+                    <img src={{ url_for('static', filename='/FotoObat/Kudis/Scadid.png') }} width="250" class="mx-auto d-block">
+                    <span class="d-block mt-3 font-weight-bold">Scadid Cream</span>
+                  </div>
+                  <div class="about-doctor">
+                    <table class="table table-borderless">
+                      <!-- <tbody>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Education</span>
+                              <span class="subheadings">University of Harward</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Language</span>
+                              <span class="subheadings">Spanish, English</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Organisation</span>
+                              <span class="subheadings">Accupunture</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Specialist</span>
+                              <span class="subheadings">Accupunture</span>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody> -->
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>
+</div>
+<!-- End Modal -->
+<!-- End Obat Kudis -->
+
+<!-- Obat Kurap -->
+<!-- Modal Fungiderm -->
+<div class="modal fade" id="exampleKurap" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Detail Obat</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><i class="fa fa-close"></i></span>
+          </button>
+      </div>
+            <div class="modal-body">
+              <div class="row g-0">
+                <div class="col-md-8 border-right">
+                  <div class="status p-3">
+                    <table class="table table-borderless">
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <b><span class="heading d-block">Kategori</span></b>
+                              <span class="subheadings">Kurap</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Komposisi</span>
+                              <span class="subheadings">Clotrimazole 1%.</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Rating</span>
+                              <span class="subheadings"><i class="dots"></i>5</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Dosis</span>
+                              <span class="subheadings">Oleskan (krim) / taburkan (bedak) secukupnya 2-3 x pada bagian yang sakit selama 10-14 hari secara teratur dan tidak berhenti. Infeksi disela jari kaku membutuhkan waktu 1 bulan.</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Indikasi Umum</span>
+                              <span class="subheadings">Infeksi jamur pada kulit dan kuku karena dermatofit, ragi dan jamur lainnya.</span>
+                            </div>
+                          </td>
+                          <td>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Aturan Pakai</span>
+                              <span class="subheadings">Oleskan tipis pada bagian yang membutuhkan.</span>
+                            </div>
+                          </td>  
+                          <td colspan="2">
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Deskripsi</span>
+                              <span class="subheadings">FUNGIDERM mengandung zat aktif Clotrimazole. Senyawa antijamur spektrum luas ini merupakan turunan dari imidazole dengan kemampuan antimikotik yang dapat menghambat biosintesis sterol ergostol yang merupakan bagian penting pada dinding sel jamur. FUNGIDERM CREAM digunakan untuk mengatasi dermatomikosis atau infeksi kulit akibat jamur seperti gatal, kutu air, panu, infeksi jamur di kulit kepala, kurap, kandidiasis pada kulit dan kuku.</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <!-- <div class="d-flex flex-column">
+                              <span class="heading d-block">Direction</span>
+                              <span class="d-block subheadings">Get direction by using</span>
+                              <span class="d-flex flex-row">
+                              <img src="https://img.icons8.com/color/100/000000/google-maps.png" class="rounded" width="30" />
+                              <img src="https://img.icons8.com/color/100/000000/pittsburgh-map.png" class="rounded" width="30" />
+                              </span>
+                            </div> -->
+                          </td>  
+                          <td colspan="2">
+                            <!-- <div class="d-flex flex-column">
+                              <span class="heading d-block">Hospital Gallary</span>
+                              <span class="d-flex flex-row gallery">
+                              <img src="https://i.imgur.com/VfRSLTm.jpg" width="50" class="rounded">
+                              <img src="https://i.imgur.com/jb9Cy5h.jpg" width="50" class="rounded">
+                              <img src="https://i.imgur.com/vBUz4HA.jpg" width="50" class="rounded">
+                              </span>
+                            </div> -->
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              <div class="col-md-4">
+                <div class="p-2 text-center">
+                  <div class="profile">
+                    <img src={{ url_for('static', filename='/FotoObat/Kurap/Fungiderm.png') }} width="250" class="mx-auto d-block">
+                    <span class="d-block mt-3 font-weight-bold">Fungiderm 1% Cream</span>
+                  </div>
+                  <div class="about-doctor">
+                    <table class="table table-borderless">
+                      <!-- <tbody>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Education</span>
+                              <span class="subheadings">University of Harward</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Language</span>
+                              <span class="subheadings">Spanish, English</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Organisation</span>
+                              <span class="subheadings">Accupunture</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Specialist</span>
+                              <span class="subheadings">Accupunture</span>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody> -->
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>
+</div>
+<!-- End Modal -->
+<!-- Modal Kalpanax -->
+<div class="modal fade" id="exampleKurap2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Detail Obat</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><i class="fa fa-close"></i></span>
+          </button>
+      </div>
+            <div class="modal-body">
+              <div class="row g-0">
+                <div class="col-md-8 border-right">
+                  <div class="status p-3">
+                    <table class="table table-borderless">
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <b><span class="heading d-block">Kategori</span></b>
+                              <span class="subheadings">Kurap</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Komposisi</span>
+                              <span class="subheadings">Miconazole nitrate 2%.</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Rating</span>
+                              <span class="subheadings"><i class="dots"></i>4.9</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Dosis</span>
+                              <span class="subheadings">Dioleskan ke bagian yang terinfeksi saat kering 2 kali sehari (pagi dan malam hari) atau saat terasa gatal. Walaupun gejala gatal sudah hilang, oleskan sampai 2 minggu pemakaian.</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Indikasi Umum</span>
+                              <span class="subheadings">Mengatasi gatal jamur kulit dan penyakit infeksi jamur kulit lainnya seperti kutu air, panu, kadas dan kurap langsung tuntas sampai ke akarnya.</span>
+                            </div>
+                          </td>
+                          <td>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Aturan Pakai</span>
+                              <span class="subheadings">Oleskan pada kulit yang terinfeksi setiap selesai mandi dan sebelum tidur malam.</span>
+                            </div>
+                          </td>  
+                          <td colspan="2">
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Deskripsi</span>
+                              <span class="subheadings">KALPANAX KRIM mengandung Miconazole yang merupakan obat anti jamur golongan imidazole, digunakan untuk mengobati penyakit kulit akibat infeksi jamur. Kerjanya yang sangat cepat, dingin di kulit, tidak membuat kulit terkelupas, aman digunakan pada daerah sensitif. Sangat aman digunakan untuk anak-anak, aroma bunga jasmine, dan tidak lengket di kulit.</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <!-- <div class="d-flex flex-column">
+                              <span class="heading d-block">Direction</span>
+                              <span class="d-block subheadings">Get direction by using</span>
+                              <span class="d-flex flex-row">
+                              <img src="https://img.icons8.com/color/100/000000/google-maps.png" class="rounded" width="30" />
+                              <img src="https://img.icons8.com/color/100/000000/pittsburgh-map.png" class="rounded" width="30" />
+                              </span>
+                            </div> -->
+                          </td>  
+                          <td colspan="2">
+                            <!-- <div class="d-flex flex-column">
+                              <span class="heading d-block">Hospital Gallary</span>
+                              <span class="d-flex flex-row gallery">
+                              <img src="https://i.imgur.com/VfRSLTm.jpg" width="50" class="rounded">
+                              <img src="https://i.imgur.com/jb9Cy5h.jpg" width="50" class="rounded">
+                              <img src="https://i.imgur.com/vBUz4HA.jpg" width="50" class="rounded">
+                              </span>
+                            </div> -->
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              <div class="col-md-4">
+                <div class="p-2 text-center">
+                  <div class="profile">
+                    <img src={{ url_for('static', filename='/FotoObat/Kurap/Kalpanax.png') }} width="250" class="mx-auto d-block">
+                    <span class="d-block mt-3 font-weight-bold">Kalpanax Krim 10g</span>
+                  </div>
+                  <div class="about-doctor">
+                    <table class="table table-borderless">
+                      <!-- <tbody>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Education</span>
+                              <span class="subheadings">University of Harward</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Language</span>
+                              <span class="subheadings">Spanish, English</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Organisation</span>
+                              <span class="subheadings">Accupunture</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Specialist</span>
+                              <span class="subheadings">Accupunture</span>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody> -->
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>
+</div>
+<!-- End Modal -->
+<!-- Modal Nosib -->
+<div class="modal fade" id="exampleKurap4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Detail Obat</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><i class="fa fa-close"></i></span>
+          </button>
+      </div>
+            <div class="modal-body">
+              <div class="row g-0">
+                <div class="col-md-8 border-right">
+                  <div class="status p-3">
+                    <table class="table table-borderless">
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <b><span class="heading d-block">Kategori</span></b>
+                              <span class="subheadings">Kurap</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Komposisi</span>
+                              <span class="subheadings">Sulphur 9% Salicylic acid 5% Benzoic acid 4.2% Camphora 1.6% Menthol 1.3% Base ad 100%.</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Rating</span>
+                              <span class="subheadings"><i class="dots"></i>4.8</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Dosis</span>
+                              <span class="subheadings">Oleskan salep secara merata pada area tersebut sebanyak 3x sehari.</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Indikasi Umum</span>
+                              <span class="subheadings">Membantu meringankan penyakit kulit seperti kudis, kurap, dan panu Membantu melakukan proses pengelupasan kulit mati.</span>
+                            </div>
+                          </td>
+                          <td>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Aturan Pakai</span>
+                              <span class="subheadings">Dioleskan pada bagian kulit yang sakit, bilas dan keringkan bagian kulit yang bermasalah.</span>
+                            </div>
+                          </td>  
+                          <td colspan="2">
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Deskripsi</span>
+                              <span class="subheadings">Sean Zalf Salep Kulit bekerja sebagai keratolitik yang membantu melakukan proses pengelupasan kulit mati dan anti bakteri maupun kuman, sehingga ampuh untuk mengatasi permasalahan kulit yang disebabkan oleh bakteri dan kuman seperti panu, kurap, kudis, dll.</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <!-- <div class="d-flex flex-column">
+                              <span class="heading d-block">Direction</span>
+                              <span class="d-block subheadings">Get direction by using</span>
+                              <span class="d-flex flex-row">
+                              <img src="https://img.icons8.com/color/100/000000/google-maps.png" class="rounded" width="30" />
+                              <img src="https://img.icons8.com/color/100/000000/pittsburgh-map.png" class="rounded" width="30" />
+                              </span>
+                            </div> -->
+                          </td>  
+                          <td colspan="2">
+                            <!-- <div class="d-flex flex-column">
+                              <span class="heading d-block">Hospital Gallary</span>
+                              <span class="d-flex flex-row gallery">
+                              <img src="https://i.imgur.com/VfRSLTm.jpg" width="50" class="rounded">
+                              <img src="https://i.imgur.com/jb9Cy5h.jpg" width="50" class="rounded">
+                              <img src="https://i.imgur.com/vBUz4HA.jpg" width="50" class="rounded">
+                              </span>
+                            </div> -->
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              <div class="col-md-4">
+                <div class="p-2 text-center">
+                  <div class="profile">
+                    <img src={{ url_for('static', filename='/FotoObat/Kurap/SeanZalf.png') }} width="250" class="mx-auto d-block">
+                    <span class="d-block mt-3 font-weight-bold">Sean Zalf Salep 6 g</span>
+                  </div>
+                  <div class="about-doctor">
+                    <table class="table table-borderless">
+                      <!-- <tbody>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Education</span>
+                              <span class="subheadings">University of Harward</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Language</span>
+                              <span class="subheadings">Spanish, English</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Organisation</span>
+                              <span class="subheadings">Accupunture</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Specialist</span>
+                              <span class="subheadings">Accupunture</span>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody> -->
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>
+</div>
+<!-- End Modal -->
+<!-- Modal Nosib -->
+<div class="modal fade" id="exampleKurap3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Detail Obat</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><i class="fa fa-close"></i></span>
+          </button>
+      </div>
+            <div class="modal-body">
+              <div class="row g-0">
+                <div class="col-md-8 border-right">
+                  <div class="status p-3">
+                    <table class="table table-borderless">
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <b><span class="heading d-block">Kategori</span></b>
+                              <span class="subheadings">Kurap</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Komposisi</span>
+                              <span class="subheadings">Acidum Salicylum 0.080 gram, Acidum Benzoicum 0.080 gram, Sulfur Praecipitatum 0.090 gram, Mentholum 0.003 gram, Salep Constituent ad. 1 gram.</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Rating</span>
+                              <span class="subheadings"><i class="dots"></i>4.9</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Dosis</span>
+                              <span class="subheadings">3 x sehari.</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Indikasi Umum</span>
+                              <span class="subheadings">Untuk mengobati penyakit kulit seperti kudis, kurap, jamur, panu, kutu air, bisul dan gatal-gatal di sela-sela jari kaki.</span>
+                            </div>
+                          </td>
+                          <td>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Aturan Pakai</span>
+                              <span class="subheadings">Dioleskan pada bagian kulit yang sakit.</span>
+                            </div>
+                          </td>  
+                          <td colspan="2">
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Deskripsi</span>
+                              <span class="subheadings">SALEP NOSIB 14 GRAM digunakan untuk mengatasi beberapa masalah kulit seperti panu, kadas, kurap, kudis, kutu air, gatal-gatal pada kulit yang disebabkan oleh bakteri dan jamur, dapat pula digunakan untuk mengobati eksim dan gatal akibat gigitan serangga.</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <!-- <div class="d-flex flex-column">
+                              <span class="heading d-block">Direction</span>
+                              <span class="d-block subheadings">Get direction by using</span>
+                              <span class="d-flex flex-row">
+                              <img src="https://img.icons8.com/color/100/000000/google-maps.png" class="rounded" width="30" />
+                              <img src="https://img.icons8.com/color/100/000000/pittsburgh-map.png" class="rounded" width="30" />
+                              </span>
+                            </div> -->
+                          </td>  
+                          <td colspan="2">
+                            <!-- <div class="d-flex flex-column">
+                              <span class="heading d-block">Hospital Gallary</span>
+                              <span class="d-flex flex-row gallery">
+                              <img src="https://i.imgur.com/VfRSLTm.jpg" width="50" class="rounded">
+                              <img src="https://i.imgur.com/jb9Cy5h.jpg" width="50" class="rounded">
+                              <img src="https://i.imgur.com/vBUz4HA.jpg" width="50" class="rounded">
+                              </span>
+                            </div> -->
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              <div class="col-md-4">
+                <div class="p-2 text-center">
+                  <div class="profile">
+                    <img src={{ url_for('static', filename='/FotoObat/Kurap/Nosib.png') }} width="250" class="mx-auto d-block">
+                    <span class="d-block mt-3 font-weight-bold">Salep Nosib 6 g</span>
+                  </div>
+                  <div class="about-doctor">
+                    <table class="table table-borderless">
+                      <!-- <tbody>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Education</span>
+                              <span class="subheadings">University of Harward</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Language</span>
+                              <span class="subheadings">Spanish, English</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Organisation</span>
+                              <span class="subheadings">Accupunture</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Specialist</span>
+                              <span class="subheadings">Accupunture</span>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody> -->
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>
+</div>
+<!-- End Modal -->
+<!-- End Obat Kurap -->
+
+<!-- Obat Panu -->
+<!-- Modal Canesten -->
+<div class="modal fade" id="examplePanu" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Detail Obat</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><i class="fa fa-close"></i></span>
+          </button>
+      </div>
+            <div class="modal-body">
+              <div class="row g-0">
+                <div class="col-md-8 border-right">
+                  <div class="status p-3">
+                    <table class="table table-borderless">
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <b><span class="heading d-block">Kategori</span></b>
+                              <span class="subheadings">Panu</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Komposisi</span>
+                              <span class="subheadings">Clotrimazole 1%.</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Rating</span>
+                              <span class="subheadings"><i class="dots"></i>4.9</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Dosis</span>
+                              <span class="subheadings">Dosis untuk Dewasa : 2-3 kali sehari Jangka Pemakaian : Gunakan obat minimal selama 2 minggu untuk memastikan infeksi jamur telah teratasi.</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Indikasi Umum</span>
+                              <span class="subheadings">Anti alergi sepeti urtikaria biduran kaligata, neurodermatitis, gatal-gatal dermatosis, rinitis alergika, alergi akibat gigitan serangga.</span>
+                            </div>
+                          </td>
+                          <td>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Aturan Pakai</span>
+                              <span class="subheadings">Mengatasi jamur pada kulit, panu, kadas/kurap, kutu air, dan ruam popok.</span>
+                            </div>
+                          </td>  
+                          <td colspan="2">
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Deskripsi</span>
+                              <span class="subheadings">CANESTEN CREAM adalah krim yang mengandung Clotrimazole. Obat ini digunakan untuk mengatasi jamur pada kulit, panu, kadas/kurap, kutu air, dan ruam popok. Mekanisme obat ini adalah dengan menurunkan biosintesis ergosterol. Penurunan biosintesis ini mengakibatkan penghambatan fungsi sel membran.</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <!-- <div class="d-flex flex-column">
+                              <span class="heading d-block">Direction</span>
+                              <span class="d-block subheadings">Get direction by using</span>
+                              <span class="d-flex flex-row">
+                              <img src="https://img.icons8.com/color/100/000000/google-maps.png" class="rounded" width="30" />
+                              <img src="https://img.icons8.com/color/100/000000/pittsburgh-map.png" class="rounded" width="30" />
+                              </span>
+                            </div> -->
+                          </td>  
+                          <td colspan="2">
+                            <!-- <div class="d-flex flex-column">
+                              <span class="heading d-block">Hospital Gallary</span>
+                              <span class="d-flex flex-row gallery">
+                              <img src="https://i.imgur.com/VfRSLTm.jpg" width="50" class="rounded">
+                              <img src="https://i.imgur.com/jb9Cy5h.jpg" width="50" class="rounded">
+                              <img src="https://i.imgur.com/vBUz4HA.jpg" width="50" class="rounded">
+                              </span>
+                            </div> -->
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              <div class="col-md-4">
+                <div class="p-2 text-center">
+                  <div class="profile">
+                    <img src={{ url_for('static', filename='/FotoObat/Panu/Canesten.png') }} width="250" class="mx-auto d-block">
+                    <span class="d-block mt-3 font-weight-bold">Canesten Cream</span>
+                  </div>
+                  <div class="about-doctor">
+                    <table class="table table-borderless">
+                      <!-- <tbody>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Education</span>
+                              <span class="subheadings">University of Harward</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Language</span>
+                              <span class="subheadings">Spanish, English</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Organisation</span>
+                              <span class="subheadings">Accupunture</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Specialist</span>
+                              <span class="subheadings">Accupunture</span>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody> -->
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>
+</div>
+<!-- End Modal -->
+<!-- Modal Daktarin -->
+<div class="modal fade" id="examplePanu2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Detail Obat</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><i class="fa fa-close"></i></span>
+          </button>
+      </div>
+            <div class="modal-body">
+              <div class="row g-0">
+                <div class="col-md-8 border-right">
+                  <div class="status p-3">
+                    <table class="table table-borderless">
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <b><span class="heading d-block">Kategori</span></b>
+                              <span class="subheadings">Panu</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Komposisi</span>
+                              <span class="subheadings">Setiap gram krim mengandung 20 mg mikonazol nitrat.</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Rating</span>
+                              <span class="subheadings"><i class="dots"></i>4.9</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Dosis</span>
+                              <span class="subheadings">Oleskan 2 kali sehari pada bagian kulit yang terinfeksi selama 2-6 minggu, tergantung berat ringan penyakit. Penggunaan krim harus dilanjutkan setidaknya 7 hari setelah hilangnya semua tanda-tanda infeksi hilang dengan tujuan untuk mencegah infeksi kembali kambuh.</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Indikasi Umum</span>
+                              <span class="subheadings">Krim yang digunakan untuk mengobati penyakit kulit yang diakibatkan oleh berbagai jenis jamur panu, penyakit kulit pada sela-sela jari, selangkangan, lipatan kulit, badan dan infeksi jamur yang sudah disertai infeksi sekunder bakteri gram positif.</span>
+                            </div>
+                          </td>
+                          <td>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Aturan Pakai</span>
+                              <span class="subheadings">Oleskan krim setelah bagian yang sakit dibersihkan dan dikeringkan.</span>
+                            </div>
+                          </td>  
+                          <td colspan="2">
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Deskripsi</span>
+                              <span class="subheadings">DAKTARIN CREAM merupakan sediaan topikal atau obat oles kulit yang mengandung zat aktif Miconazole Nitrate. Krim ini digunakan untuk mengobati infeksi kulit yang disebabkan oleh dermatofit atau ragi, dan jamur lainnya. Miconazole bekerja dengan menghancurkan bakteri dan jamur penyebab infeksi. Dengan demikian, maka obat ini digunakan untuk mengatasi penyakit infeksi kulit yang diakibatkan oleh berbagai jenis jamur serta infeksi yang disebabkan karena bakteri gram positif.</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <!-- <div class="d-flex flex-column">
+                              <span class="heading d-block">Direction</span>
+                              <span class="d-block subheadings">Get direction by using</span>
+                              <span class="d-flex flex-row">
+                              <img src="https://img.icons8.com/color/100/000000/google-maps.png" class="rounded" width="30" />
+                              <img src="https://img.icons8.com/color/100/000000/pittsburgh-map.png" class="rounded" width="30" />
+                              </span>
+                            </div> -->
+                          </td>  
+                          <td colspan="2">
+                            <!-- <div class="d-flex flex-column">
+                              <span class="heading d-block">Hospital Gallary</span>
+                              <span class="d-flex flex-row gallery">
+                              <img src="https://i.imgur.com/VfRSLTm.jpg" width="50" class="rounded">
+                              <img src="https://i.imgur.com/jb9Cy5h.jpg" width="50" class="rounded">
+                              <img src="https://i.imgur.com/vBUz4HA.jpg" width="50" class="rounded">
+                              </span>
+                            </div> -->
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              <div class="col-md-4">
+                <div class="p-2 text-center">
+                  <div class="profile">
+                    <img src={{ url_for('static', filename='/FotoObat/Panu/Daktarin.png') }} width="250" class="mx-auto d-block">
+                    <span class="d-block mt-3 font-weight-bold">Daktarin Cream</span>
+                  </div>
+                  <div class="about-doctor">
+                    <table class="table table-borderless">
+                      <!-- <tbody>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Education</span>
+                              <span class="subheadings">University of Harward</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Language</span>
+                              <span class="subheadings">Spanish, English</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Organisation</span>
+                              <span class="subheadings">Accupunture</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Specialist</span>
+                              <span class="subheadings">Accupunture</span>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody> -->
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>
+</div>
+<!-- End Modal -->
+<!-- Modal Kulit88 -->
+<div class="modal fade" id="examplePanu3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Detail Obat</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><i class="fa fa-close"></i></span>
+          </button>
+      </div>
+            <div class="modal-body">
+              <div class="row g-0">
+                <div class="col-md-8 border-right">
+                  <div class="status p-3">
+                    <table class="table table-borderless">
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <b><span class="heading d-block">Kategori</span></b>
+                              <span class="subheadings">Panu</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Komposisi</span>
+                              <span class="subheadings">Acidum salicylicum 60 mg,Acidum benzoicum 65 mg,Sulfur praecipitatum 60 mg,Camphora 30 mg,Mentholum 25 mg, Vaselin album ad 1000 mg.</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Rating</span>
+                              <span class="subheadings"><i class="dots"></i>4.9</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Dosis</span>
+                              <span class="subheadings">Dioleskan 3x sehari secukupnya pada bagian yang sakit dan gatal.</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Indikasi Umum</span>
+                              <span class="subheadings">Untuk mengobati penyakit kulit seperti panu, kadas, kurap, kudis, kutu air dan gatal-gatal yang disebabkan oleh infeksi jamur.</span>
+                            </div>
+                          </td>
+                          <td>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Aturan Pakai</span>
+                              <span class="subheadings">Sebelum dioleskan salep, kulit yang sakit dibersihkan dahulu dan dikeringkan.</span>
+                            </div>
+                          </td>  
+                          <td colspan="2">
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Deskripsi</span>
+                              <span class="subheadings">SALEP KULIT 88 merupakan obat luar yang mengandung Salicylic acid, Benzoic acid dan Sulfur praecipitatum. Obat ini digunakan untuk mengatasi penyakit yang disebabkan oleh jamur serta infeksi bakteri ringan seperti panu, kudis, kurap dan kutu air. Obat ini dapat meringankan rasa gatal yang timbul sekaligus membasmi jamur dan bakteri yang menginfeksi.</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <!-- <div class="d-flex flex-column">
+                              <span class="heading d-block">Direction</span>
+                              <span class="d-block subheadings">Get direction by using</span>
+                              <span class="d-flex flex-row">
+                              <img src="https://img.icons8.com/color/100/000000/google-maps.png" class="rounded" width="30" />
+                              <img src="https://img.icons8.com/color/100/000000/pittsburgh-map.png" class="rounded" width="30" />
+                              </span>
+                            </div> -->
+                          </td>  
+                          <td colspan="2">
+                            <!-- <div class="d-flex flex-column">
+                              <span class="heading d-block">Hospital Gallary</span>
+                              <span class="d-flex flex-row gallery">
+                              <img src="https://i.imgur.com/VfRSLTm.jpg" width="50" class="rounded">
+                              <img src="https://i.imgur.com/jb9Cy5h.jpg" width="50" class="rounded">
+                              <img src="https://i.imgur.com/vBUz4HA.jpg" width="50" class="rounded">
+                              </span>
+                            </div> -->
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              <div class="col-md-4">
+                <div class="p-2 text-center">
+                  <div class="profile">
+                    <img src={{ url_for('static', filename='/FotoObat/Panu/Kulit88.png') }} width="250" class="mx-auto d-block">
+                    <span class="d-block mt-3 font-weight-bold">Salep Kulit 88</span>
+                  </div>
+                  <div class="about-doctor">
+                    <table class="table table-borderless">
+                      <!-- <tbody>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Education</span>
+                              <span class="subheadings">University of Harward</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Language</span>
+                              <span class="subheadings">Spanish, English</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Organisation</span>
+                              <span class="subheadings">Accupunture</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Specialist</span>
+                              <span class="subheadings">Accupunture</span>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody> -->
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>
+</div>
+<!-- End Modal -->
+<!-- End Obat Panu -->
+
+<!-- Modal Ichtyol -->
+<div class="modal fade" id="exampleBisul1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Detail Obat</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><i class="fa fa-close"></i></span>
+          </button>
+      </div>
+            <div class="modal-body">
+              <div class="row g-0">
+                <div class="col-md-8 border-right">
+                  <div class="status p-3">
+                    <table class="table table-borderless">
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <b><span class="heading d-block">Kategori</span></b>
+                              <span class="subheadings">Bisul</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Komposisi</span>
+                              <span class="subheadings">Ichtammolum 100 mg</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Rating</span>
+                              <span class="subheadings"><i class="dots"></i>4.9</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Dosis</span>
+                              <span class="subheadings">Sesuai kebutuhan.</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Indikasi Umum</span>
+                              <span class="subheadings">Salep yang berfungsi untuk mengobati bisul. Obat ini digunakan dengan cara dioleskan di sekitar bisul.</span>
+                            </div>
+                          </td>
+                          <td>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Aturan Pakai</span>
+                              <span class="subheadings">Oleskan pada bagian yang sakit setelah dibersihkan.</span>
+                            </div>
+                          </td>  
+                          <td colspan="2">
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Deskripsi</span>
+                              <span class="subheadings">ICHTYOL merupakan salep yang berfungsi untuk mengobati bisul. Obat ini digunakan dengan cara dioleskan di sekitar bisul.</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <!-- <div class="d-flex flex-column">
+                              <span class="heading d-block">Direction</span>
+                              <span class="d-block subheadings">Get direction by using</span>
+                              <span class="d-flex flex-row">
+                              <img src="https://img.icons8.com/color/100/000000/google-maps.png" class="rounded" width="30" />
+                              <img src="https://img.icons8.com/color/100/000000/pittsburgh-map.png" class="rounded" width="30" />
+                              </span>
+                            </div> -->
+                          </td>  
+                          <td colspan="2">
+                            <!-- <div class="d-flex flex-column">
+                              <span class="heading d-block">Hospital Gallary</span>
+                              <span class="d-flex flex-row gallery">
+                              <img src="https://i.imgur.com/VfRSLTm.jpg" width="50" class="rounded">
+                              <img src="https://i.imgur.com/jb9Cy5h.jpg" width="50" class="rounded">
+                              <img src="https://i.imgur.com/vBUz4HA.jpg" width="50" class="rounded">
+                              </span>
+                            </div> -->
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              <div class="col-md-4">
+                <div class="p-2 text-center">
+                  <div class="profile">
+                    <img src={{ url_for('static', filename='/FotoObat/Bisul/Ichtyol.jpg') }} width="250" class="mx-auto d-block">
+                    <span class="d-block mt-3 font-weight-bold">Salep Ichtyol 15g</span>
+                  </div>
+                  <div class="about-doctor">
+                    <table class="table table-borderless">
+                      <!-- <tbody>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Education</span>
+                              <span class="subheadings">University of Harward</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Language</span>
+                              <span class="subheadings">Spanish, English</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Organisation</span>
+                              <span class="subheadings">Accupunture</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Specialist</span>
+                              <span class="subheadings">Accupunture</span>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody> -->
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>
+</div>
+<!-- End Modal -->
+
+<!-- Modal Gentamicin -->
+<div class="modal fade" id="exampleBisul2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Detail Obat</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><i class="fa fa-close"></i></span>
+          </button>
+      </div>
+            <div class="modal-body">
+              <div class="row g-0">
+                <div class="col-md-8 border-right">
+                  <div class="status p-3">
+                    <table class="table table-borderless">
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <b><span class="heading d-block">Kategori</span></b>
+                              <span class="subheadings">Bisul</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Komposisi</span>
+                              <span class="subheadings">Gentamicin sulfate 0.1%.</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Rating</span>
+                              <span class="subheadings"><i class="dots"></i>5</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Dosis</span>
+                              <span class="subheadings">PENGGUNAAN OBAT INI HARUS SESUAI DENGAN PETUNJUK DOKTER. Krim/Salep Gentamicin dioleskan tipis pada daerah yang sakit sebanyak 3-4 kali sehari sampai tercapai kesembuhan. Daerah yang sakit boleh ditutupi dengan perban (gauze dressing).</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Indikasi Umum</span>
+                              <span class="subheadings">Infeksi kulit ringan, seperti impetigo, folikulitis, pioderma, yang biasanya ditandai dengan adanya nanah. Infeksi kulit ringan yang berhubungan dengan beberapa kondisi kulit, seperti eksim, psoriasis, luka bakar ringan, lecet, bisul, ataupun luka-luka lain.</span>
+                            </div>
+                          </td>
+                          <td>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Aturan Pakai</span>
+                              <span class="subheadings">Dioleskan tipis tipis pada kulit yang bermasalah setelah kulit dibersihkan dan dikeringkan.</span>
+                            </div>
+                          </td>  
+                          <td colspan="2">
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Deskripsi</span>
+                              <span class="subheadings">Salep gentamicin adalah obat antibiotik berbentuk salep yang digunakan untuk mengobati infeksi pada kulit yang disebabkan oleh bakteri. Beberapa jenis infeksi kulit yang dapat diobati contohnya pioderma, furunkel atau bisul, impetigo, dermatitis dengan infeksi sekunder, dan lain-lain.</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <!-- <div class="d-flex flex-column">
+                              <span class="heading d-block">Direction</span>
+                              <span class="d-block subheadings">Get direction by using</span>
+                              <span class="d-flex flex-row">
+                              <img src="https://img.icons8.com/color/100/000000/google-maps.png" class="rounded" width="30" />
+                              <img src="https://img.icons8.com/color/100/000000/pittsburgh-map.png" class="rounded" width="30" />
+                              </span>
+                            </div> -->
+                          </td>  
+                          <td colspan="2">
+                            <!-- <div class="d-flex flex-column">
+                              <span class="heading d-block">Hospital Gallary</span>
+                              <span class="d-flex flex-row gallery">
+                              <img src="https://i.imgur.com/VfRSLTm.jpg" width="50" class="rounded">
+                              <img src="https://i.imgur.com/jb9Cy5h.jpg" width="50" class="rounded">
+                              <img src="https://i.imgur.com/vBUz4HA.jpg" width="50" class="rounded">
+                              </span>
+                            </div> -->
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              <div class="col-md-4">
+                <div class="p-2 text-center">
+                  <div class="profile">
+                    <img src={{ url_for('static', filename='/FotoObat/Bisul/Gentacimin.jpg') }} width="250" class="mx-auto d-block">
+                    <span class="d-block mt-3 font-weight-bold">Gentamicin Salep Kulit 0.1% 5g</span>
+                  </div>
+                  <div class="about-doctor">
+                    <table class="table table-borderless">
+                      <!-- <tbody>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Education</span>
+                              <span class="subheadings">University of Harward</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Language</span>
+                              <span class="subheadings">Spanish, English</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Organisation</span>
+                              <span class="subheadings">Accupunture</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Specialist</span>
+                              <span class="subheadings">Accupunture</span>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody> -->
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>
+</div>
+<!-- End Modal -->
+
+<!-- Modal Panduan -->
+<div class="modal fade" id="modalPanduan" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Panduan Mengambil Gambar</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><i class="fa fa-close"></i></span>
+          </button>
+      </div>
+            <div class="modal-body">
+              <div class="row g-0">
+                <div class="col-md-8 border-right">
+                  <div class="status p-3">
+                    <table class="table table-borderless">
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Jarak</span>
+                              <span class="subheadings">Pastikan tidak mengambil jarak yang berjauhan. Ambil gambar dengan jarak kira-kira 10-30cm</span>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Flash</span>
+                              <span class="subheadings">Bila dalam kondisi gelap, flash disarankan untuk diaktifkan agar gambar yang dihasilkan terlihat jelas</span>
+                            </div>
+                          </td>
+                          <td>
+                          </td>
+                        </tr>
+                        <tr>  
+                          <td colspan="2">
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Kualitas</span>
+                              <span class="subheadings">Periksa ulang gambar yang telah diambil dan pastikan gambar penyakit yang diambil sudah terlihat jelas</span>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              <div class="col-md-4">
+                <div class="p-2 text-center">
+                  <div class="profile">
+                    <img src={{ url_for('static', filename='/images/pic.jpg') }} width="230" class="mx-auto d-block">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>
+</div>
+<!-- End Modal -->
+
+  <!-- End Rekomendasi Obat -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-info">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span>SiBangkit</span>
+          </a>
+          <p>Aplikasi untuk mendeteksi penyakit seperti diabetes, penyakit pada kulit atau mata.</p>
+          <div class="social-links d-flex mt-4">
+            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="{{ url_for('beranda') }}">Home</a></li>
+            <li><a href="{{ url_for('cariObat') }}">Cari Obat</a></li>
+            <li><a href="{{ url_for('diabetes') }}">Diabetes</a></li>
+            <li><a href="{{ url_for('kulit') }}">Kulit</a></li>
+            <li><a href="{{ url_for('mata') }}">Mata</a></li>
+            <li><a href="{{ url_for('about') }}">About Us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Source Code</h4>
+          <ul>
+            <li><a href="">GitHub</a></li>
+          </ul>
+        </div>
+
+        
+
+      </div>
+    </div>
+
+    <div class="container mt-4">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Logis</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/logis-bootstrap-logistics-website-template/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+
+  </footer><!-- End Footer -->
+  <!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src={{ url_for('static', filename='/vendor/bootstrap/js/bootstrap.bundle.min.js') }}></script>
+  <script src={{ url_for('static', filename='/vendor/purecounter/purecounter_vanilla.js') }}></script>
+  <script src={{ url_for('static', filename='/vendor/glightbox/js/glightbox.min.js') }}></script>
+  <script src={{ url_for('static', filename='/vendor/swiper/swiper-bundle.min.js') }}></script>
+  <script src={{ url_for('static', filename='/vendor/aos/aos.js') }}></script>
+  <script src={{ url_for('static', filename='/vendor/php-email-form/validate.js') }}></script>
+
+
+<!--   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script> -->
+
+  <!-- Template Main JS File -->
+  <script src={{ url_for('static', filename='/js/main.js') }}></script>
+  <!-- <script src="assets/js/main.js"></script> -->
+
+  <script src={{ url_for('static', filename='/js/client_side-cv.js') }}></script>
+
+  <!-- Script Modal -->
+  <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js'></script>
+  <script type='text/javascript' src='#'></script>
+  <script type='text/javascript' src='#'></script>
+  <script type='text/javascript' src='#'></script>
+  <script type='text/javascript'>#</script>
+  <script type='text/javascript'>var myLink = document.querySelector('a[href="#"]');
+  myLink.addEventListener('click', function(e) {
+  e.preventDefault();
+  });</script>
+  
+  <!-- Script Modal -->
+
+  <!-- Script Refresh -->
+  <script type="text/javascript">
+    $(document).ready(function () {
+        $("#refresh").click(function () {
+            location.reload(true);
+        });
+    });
+  </script>
+  <!-- End -->
+
+</body>
+
+</html>

@@ -1,0 +1,1529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>SiBangkit</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+ <!--  <link href={{ url_for('static', filename='/img/favicon.png') }} rel="icon">
+  <link href={{ url_for('static', filename='/img/apple-touch-icon.png') }} rel="apple-touch-icon"> -->
+  <link rel="icon" href={{ url_for('static', filename='/logo/icon-title-2.png') }} type="image/x-icon">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <!-- <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href={{ url_for('static', filename='/vendor/aos/aos.css') }} rel="stylesheet" type="text/css">
+  <link href={{ url_for('static', filename='/vendor/bootstrap/css/bootstrap.min.css') }} rel="stylesheet" type="text/css">
+  <link href={{ url_for('static', filename='/vendor/bootstrap-icons/bootstrap-icons.css') }} rel="stylesheet" type="text/css">
+  <link href={{ url_for('static', filename='/vendor/fontawesome-free/css/all.min.css') }} rel="stylesheet" type="text/css">
+  <link href={{ url_for('static', filename='/vendor/glightbox/css/glightbox.min.css') }} rel="stylesheet" type="text/css">
+  <link href={{ url_for('static', filename='/vendor/swiper/swiper-bundle.min.css') }} rel="stylesheet" type="text/css">
+
+
+<!--   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"> -->
+
+  <!-- Template Main CSS File -->
+  <link href={{ url_for('static', filename='/css/main.css') }} rel="stylesheet" type="text/css">
+  <link href={{ url_for('static', filename='/css/style-modal.css') }} rel="stylesheet" type="text/css">
+  <link href={{ url_for('static', filename='/css/style-carousel.css') }} rel="stylesheet" type="text/css">
+  <!-- <link href="assets/css/main.css" rel="stylesheet"> -->
+
+  <script src={{ url_for('static', filename='/js/jquery_3.6.0.min.js') }} ></script>
+  <script src={{ url_for('static', filename='/js/bootstrap_3.4.1.min.js') }} ></script>
+
+  <!-- =======================================================
+  * Template Name: Logis - v1.2.1
+  * Template URL: https://bootstrapmade.com/logis-bootstrap-logistics-website-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="{{ url_for('beranda') }}" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1>SiBangkit</h1>
+      </a>
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="{{ url_for('beranda') }}">Home</a></li>
+          <li><a href="{{ url_for('cariObat') }}">Cari Obat</a></li>
+          <li><a href="{{ url_for('diabetes') }}">Diabetes</a></li>
+          <li><a href="{{ url_for('kulit') }}">Kulit</a></li>
+          <li><a href="{{ url_for('mata') }}" class="active">Mata</a></li>
+          <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
+          </li> -->
+          <li><a href="{{ url_for('about') }}">About Us</a></li>
+          <!-- <li><a class="get-a-quote" href="get-a-quote.html">Get a Quote</a></li> -->
+        </ul>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+  <!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs">
+      <div class="page-header d-flex align-items-center" style="background-image: url('static/img/eye-3.jpg');">
+        <div class="container position-relative">
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-6 text-center">
+              <h2>Mata</h2>
+              <p>Digunakan untuk klasifikasi penyakit pada mata anda dan akan memberi informasi mengenai penyakitnya, memberikan masukan atau tips dan obat yang bisa digunakan.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav>
+        <div class="container">
+          <ol>
+            <li><a href="{{ url_for('beranda') }}" style="color: #179C8C">Home</a></li>
+            <li>Mata</li>
+          </ol>
+        </div>
+      </nav>
+    </div><!-- End Breadcrumbs -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); padding: 25px 50px 75px 100px;">
+
+       <!--  <div>
+          <iframe style="border:0; width: 100%; height: 340px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen></iframe>
+        </div> --><!-- End Google Maps -->
+
+        <div class="section-title">
+          <center>
+            <h2 style="font-family: Poppins;">Klasifikasi Penyakit Pada Mata</h2>
+            <p style="font-family: Poppins;"> <a href = "#" data-toggle="modal" data-target="#modalPanduan"><i class="fas fa-eye text-primary mr-1"></i> Ambil gambar</a></p>
+          </center>
+        </div>
+
+        <div class="row gy-4 mt-4"">
+
+          <div class="col-lg-6">
+            <form action="{{ url_for('mata') }}" method="POST">
+            
+            <!-- Input atau Upload Gambar dari Pengguna -->
+            <div class="wrapper">
+              <div class="container">
+                <h3>Upload Gambar</h3>
+                <div class="upload-container">
+                  <div class="border-container">
+                    <div class="icons fa-4x">
+                      <img src={{ url_for('static', filename='/images/upload.jpg') }} width="120" style="margin-left: 30px;"></img>
+                    </div>
+                    <input type="file" id="input_gambar" name="file">                  
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Tombol Prediksi -->
+            <br>
+            <button type="submit" id="prediksi_submit" class="btn btn-success btn-lg" style="width: 120px; color: white; height: 50px;">Deteksi</button> 
+            |
+            <input type="reset" class="btn btn-warning btn-lg" value="Refresh" id="refresh" style="width: 120px; color: white; height: 50px;"></input>
+              <!-- <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="number" name="name" class="form-control" id="umur" placeholder="Umur" required>
+                </div> -->
+
+                <!-- BUTTON -->
+                <!-- <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <div class="row">
+                    <div class="col-md-6 form-group">
+                      <div class="text-center"><button type="submit" id="prediksi_submit" class="btn btn-default btn-sm">Prediksi</button></div>
+                    </div>
+
+                    <div class="col-md-6 form-group">
+                      <div class="text-center"><button type="reset" class="btn btn-danger btn-default">Bersihkan</button></div>
+                    </div>
+                  </div>
+                </div> -->
+              <!-- </div> -->
+            </form>
+          </div><!-- End Contact Form -->
+
+           <div class="col-lg-6">
+
+            <div class="info-box mb-4" >
+              <center><h4 style="font-family: Poppins;">Hasil Prediksi</h4></center>
+                <!-- Bagian Halaman untuk Hasil Prediksi -->
+                <div id="hasil_prediksi" align="center">
+                    <i class="bi bi-info-circle-fill" style="font-size: 100px; color: #179C8C;"></i>
+                    <!-- Hasil Prediksi akan ditampilkan di sini-->
+                </div>
+            </div>
+            <!-- End Info Item -->
+
+          <!-- </div> -->
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+    <!-- ======= Bercak Penjelasan ======= -->
+    <div id="penjelasan_bercak" style="display: none;">
+    <section id="features" class="features">
+    <div class="row gy-4 align-items-center features-item" data-aos="fade-up">
+          <div class="col-md-5" align="center">
+            <img src={{ url_for('static', filename='/images/bercak.jpg') }} width="400px" height="100px" class="img-fluid img-thumbnail" alt="">
+          </div>
+          <div class="col-md-7">
+            <h3>Subkonjungtiva Bleeding</h3>
+            <p>Ini terjadi karena pecahnya pembuluh darah kecil di bawah konjungtiva. Kondisi ini bisa terlihat karena adanya bercak merah terang di bagian putih mata. Meski gejalanya terlihat serius, perdarahan subkonjungtiva pada umumnya tidak berbahaya.</p>
+            <ul>
+              <li><i class="bi bi-check"></i> Terlihat bercak darah pada sisi-sisi mata</li>
+              <li><i class="bi bi-check"></i> Kondisi ini seringkali hanya terjadi di salah satu mata</li>
+              <li><i class="bi bi-check"></i> Konjungtiva tidak dapat menyerap darah dengan sangat cepat, sehingga darah terperangkap</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    </div>
+    <!-- End About Us Section -->
+
+    <!-- ======= About Us Section ======= -->
+    <div id="some_id0" align="center" style="display: none;">
+      <section id="about" class="about pt-0">
+        <div class="container" data-aos="fade-up">
+
+          <div class="row gy-4">
+            <div class="row gy-4">
+            <div class="col-lg-6 content order-last  order-lg-first">
+              <h3>Penyebab</h3>
+              <p>
+               Penyebab umum terjadinya kejadian ini adalah:
+              </p>
+              <ul>
+                <li data-aos="fade-up" data-aos-delay="100">
+                  <i class="fas fa-eye"></i>
+                  <div>
+                    <h5>Menggosok mata terlalu keras</h5>
+                  </div>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="200">
+                  <i class="fas fa-head-side-cough"></i>
+                  <div>
+                    <h5>Batuk atau bersin yang terlalu kuat</h5>
+                  </div>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="300">
+                  <i class="fas fa-eye-slash"></i>
+                  <div>
+                    <h5>Trauma, seperti benda asing yang melukai mata</h5>
+                  </div>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="300">
+                 <i class="fas fa-dumbbell"></i>
+                  <div>
+                    <h5>Mengangkat benda berat</h5>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-6 content order-last  order-lg-first">
+              <h3>Masukan & Tips</h3>
+              <p>
+                Hindari dulu kegiatan yang dapat membuat mata lelah. Pendarahan subkonjungtiva tidak memerlukan pengobatan khusus. Umumnya, kondisi ini akan sembuh dan hilang dengan sendirinya dalam 7-14 hari.
+              </p>
+              <ul>
+                <li data-aos="fade-up" data-aos-delay="100">
+                  <i class="fas fa-exclamation-triangle"></i>
+                  <div>
+                    <h5>Hindari menggosok mata terlalu kencang</h5>
+                  </div>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="200">
+                  <i class="fas fa-eye"></i>
+                  <div>
+                    <h5>Jangan mengenakan lensa kontak</h5>
+                  </div>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="300">
+                 <i class="fas fa-smoking"></i>
+                  <div>
+                    <h5>Hindari paparan asap rokok</h5>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </div> 
+  <!-- End About Us Section -->
+
+  <!-- ======= bintitan Penjelasan ======= -->
+    <div id="penjelasan_bintitan" style="display: none;">
+    <section id="features" class="features">
+    <div class="row gy-4 align-items-center features-item" data-aos="fade-up">
+          <div class="col-md-5" align="center">
+            <img src={{ url_for('static', filename='/images/bintitan.jpg') }} width="400px" height="100px" class="img-fluid img-thumbnail" alt="">
+          </div>
+          <div class="col-md-7">
+            <h3>Bintitan</h3>
+            <p>Bintitan atau hordeolum adalah kondisi ketika bintil menyakitkan mirip jerawat atau bisul tumbuh di tepi kelopak mata. Bintitan umumnya disebabkan oleh infeksi bakteri dan biasanya hanya muncul pada salah satu kelopak mata.</p>
+            <ul>
+              <li><i class="bi bi-check"></i> Terdapat benjolan pada kelopak mata atau bisa juga di bagian dalam kelopak mata.</li>
+              <li><i class="bi bi-check"></i> Tidak menggangu penglihatan.</li>
+              <li><i class="bi bi-check"></i> Cukup menyakitkan bila disentuh.</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    </div>
+    <!-- End About Us Section -->
+
+
+    <!-- ======= About Us Section ======= -->
+    <div id="some_id1" align="center" style="display: none;">
+      <section id="about" class="about pt-0">
+        <div class="container" data-aos="fade-up">
+
+          <div class="row gy-4">
+            <div class="row gy-4">
+            <div class="col-lg-6 content order-last  order-lg-first">
+              <h3>Penyebab</h3>
+              <p>
+                Infeksi bakteri Staphylococcus merupakan penyebab utama bintitan. Bakteri yang umum hidup di kulit ini dapat menyumbat kelenjar minyak di kelopak mata dan menimbulkan peradangan. Penyebab lain dari bintitan adalah kuman dan kulit mati yang terperangkap di ujung kelopak mata.
+              </p>
+              <ul>
+                <li data-aos="fade-up" data-aos-delay="100">
+                  <i class="fas fa-allergies"></i>
+                  <div>
+                    <h5>Menyentuh mata dengan tangan yang kotor</h5>
+                    <p>Tangan yang kotor bisa menyebabkan penyakit ini muncul</p>
+                  </div>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="200">
+                  <i class="fas fa-exclamation-triangle"></i>
+                  <div>
+                    <h5>Menggunakan kosmetik yang sudah kedaluwarsa</h5>
+                    <p>Perhatikan kembali tanggal kedaluwarsa kosmetik yang akan digunakan</p>
+                  </div>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="300">
+                  <i class="fas fa-eye-slash"></i>
+                  <div>
+                    <h5>Memakai lensa kontak yang tidak steril</h5>
+                    <p>Pastikan lensa kontak yang akan digunakan benar benar bersih</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-6 content order-last  order-lg-first">
+              <h3>Masukan & Tips</h3>
+              <p>
+                Berikut pencegahan dan pengobatan yang bisa dilakukan: 
+              </p>
+              <ul>
+                <li data-aos="fade-up" data-aos-delay="100">
+                  <i class="fas fa-box-tissue"></i>
+                  <div>
+                    <h5>Kompres Hangat</h5>
+                    <p>Kompres membantu cairan atau nanah pada bintitan cepat keluar secara alami. Hal ini membuat bintitan menjadi lebih cepat pulih. Kompres bintitan selama 5 hingga 10 menit</p>
+                  </div>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="200">
+                  <i class="fas fa-exclamation-circle"></i>
+                  <div>
+                    <h5>Hindari tindakan memencet atau berusaha memecahkan benjolan. </h5>
+                    <p>Hindari tindakan ini untuk menghindari kejadian yang lebih buruk lagi. Konsultasikan dengan dokter apabila diperlukan salep atau obat-obatan</p>
+                  </div>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="300">
+                 <i class="fas fa-hands-wash"></i>
+                  <div>
+                    <h5>Cuci Tangan</h5>
+                    <p>Cuci tangan dengan sabun dan air hangat atau gunakan pembersih tangan berbasis alkohol beberapa kali setiap hari, terutama sebelum menyentuh wajah. Jika belum mencuci tangan, usahakan untuk tidak menyentuh area mata. </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </div>
+  <!-- End About Us Section -->
+
+  <!-- ======= iritasi Penjelasan ======= -->
+    <div id="penjelasan_iritasi" style="display: none;">
+    <section id="features" class="features">
+    <div class="row gy-4 align-items-center features-item" data-aos="fade-up">
+          <div class="col-md-5" align="center">
+            <img src={{ url_for('static', filename='/images/iritasi.jpg') }} width="400px" height="100px" class="img-fluid img-thumbnail" alt="">
+          </div>
+          <div class="col-md-7">
+            <h3>Konjungtivitis</h3>
+            <p>Konjungtivitis adalah mata merah akibat peradangan pada selaput yang melapisi permukaan bola mata dan kelopak mata bagian dalam (konjungtiva mata). Selain mata merah, konjungtivitis dapat disertai rasa gatal dan perih pada mata dan mata berair.</p>
+            <ul>
+              <li><i class="bi bi-check"></i> Mata merah dan berair</li>
+              <li><i class="bi bi-check"></i> Mata terasa gatal.</li>
+              <li><i class="bi bi-check"></i> Mata bengkak dan belekan</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    </div>
+    <!-- End About Us Section -->
+
+
+  <!-- ======= About Us Section ======= -->
+    <div id="some_id2" align="center" style="display: none;">
+      <section id="about" class="about pt-0">
+        <div class="container" data-aos="fade-up">
+
+          <div class="row gy-4">
+            <div class="row gy-4">
+            <div class="col-lg-6 content order-last  order-lg-first">
+              <h3>Penyebab</h3>
+              <p>
+                Disebabkan oleh infeksi virus (konjungtivitis virus). Selain konjungtivitis virus, terdapat juga konjungtivitis bakteri yang disebabkan oleh infeksi bakteri dan konjungtivitis alergi yang disebabkan oleh reaksi alergi, misalnya akibat debu.
+              </p>
+              <ul>
+                <li data-aos="fade-up" data-aos-delay="100">
+                  <i class="fas fa-viruses"></i>
+                  <div>
+                    <h5>Iritan terhadap kotoran, asap atau debu.</h5>
+                  </div>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="200">
+                  <i class="fas fa-handshake"></i>
+                  <div>
+                    <h5>Kontak langsung dengan orang yang sedang mengalami gangguan mata ini</h5>
+                    <p>Penularan terjadi karena penderita menyentuh matanya sendiri kemudian bersentuhan dengan orang lain</p>
+                  </div>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="300">
+                  <i class="fas fa-eye-slash"></i>
+                  <div>
+                    <h5>Menggunakan lensa kontak, terutama pemakaian dalam jangka panjang</h5>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-6 content order-last  order-lg-first">
+              <h3>Masukan & Tips</h3>
+              <p>
+                Berikut pencegahan dan pengobatan yang bisa dilakukan: 
+              </p>
+              <ul>
+                <li data-aos="fade-up" data-aos-delay="100">
+                  <i class="fas fa-hand-sparkles"></i>
+                  <div>
+                    <h5>Jaga kebersihan tangan dan jangan menyentuh mata dengan tangan.</h5>
+                    <p>Rutin cuci tangan untuk menghindari perpindahan bakteri</p>
+                  </div>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="200">
+                  <i class="fas fa-exclamation-circle"></i>
+                  <div>
+                    <h5>Hindari menggaruk mata dengan kuat</h5>
+                    <p>Menggaruk mata dengan kuat bisa menyebabkan masalah lain seperti pendarahan subkonjungtiva</p>
+                  </div>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="300">
+                 <i class="fas fa-smile-wink"></i>
+                  <div>
+                    <h5>Gunakan handuk dan lap bersih setiap hari.</h5>
+                    <p>Dengan menggunakan handuk atau lap bersih setiap hari bisa menghindari perpindahan bakteri</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </div> 
+  <!-- End About Us Section -->
+
+    <!-- ======= About Us Section ======= -->
+    <div id="some_id3" align="center" style="display: none;">
+      <section id="about" class="about pt-0">
+        <div class="container" data-aos="fade-up">
+
+          <div class="row gy-4">
+            <div class="col-lg-6 position-relative align-self-start order-lg-last order-first">
+              <img src={{ url_for('static', filename='/images/normal.jpg') }} width="300px" height="600px" class="img-fluid img-thumbnail" alt="">
+              <!-- <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox play-btn"></a> -->
+            </div>
+            <div class="col-lg-6 content order-last  order-lg-first">
+              <h3>Penyakit tidak terdeteksi</h3>
+              <p>
+                Penyakit tidak terdeteksi, namun meski begitu, merawat kesehatan mata sebenarnya mudah dan harus dilakukan, cukup sederhana dan perlu dilakukan selagi sehat. Berikut beberapa cara yang bisa dilakukan agar mata tetap sehat:
+              </p>
+              <ul>
+                <li data-aos="fade-up" data-aos-delay="100">
+                 <i class="fas fa-seedling"></i>
+                  <div>
+                    <h5>Konsumsi Makanan Sehat</h5>
+                    <p>Cobalah untuk rutin mengonsumsi makanan yang banyak mengandung vitamin C dan E, asam lemak omega-3, zink, dan lutein.</p>
+                  </div>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="200">
+                  <i class="fas fa-desktop"></i>
+                  <div>
+                    <h5>Istirahat dari Komputer atau Handphone</h5>
+                    <p>Hal ini bisa menyebabkan mata kering dan tegang, pandangan menjadi kabur dan sulit fokus menatap kejauhan. Pastikan untuk selalu mengambil waktu istirahat, yaitu dengan mengalihkan pandangan setiap 20 menit.</p>
+                  </div>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="300">
+                 <i class="fas fa-eye"></i>
+                  <div>
+                    <h5>Rutin Periksa Mata</h5>
+                    <p>Pemeriksaan mata bisa memantau kondisi bagian tersebut dan gangguan atau masalah kesehatan yang muncul bisa segera dideteksi. Rutin memeriksakan mata ke dokter spesialis mata sekurang-kurangnya 2 tahun sekali</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </div>
+  <!-- End About Us Section -->
+    </div><!-- End Horizontal Pricing Section -->
+
+    <!-- Rekomendasi Obat -->
+    <div id="obatIritasi" align="center" style="display: none;">
+    <div class="container-fluid pt-5">
+        <div class="text-center mb-4">
+            <h2 class="section-title px-5" style="font-family: Poppins;"><span class="px-2">-- Rekomendasi Obat --</span></h2>
+        </div>
+
+        <div class="container-xl">
+  <div class="row">
+    <div class="col-md-10 mx-auto">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+      <!-- Carousel indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+      </ol>   
+      <!-- Wrapper for carousel items -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="thumb-wrapper">
+                <div class="img-box">
+                  <img class="img-fluid w-100" src={{ url_for('static', filename='/FotoObat/Mata Merah/Ailin.png') }} alt="" width = "150px" height = "180px"/>
+                </div>
+                <div class="thumb-content">
+                  <h5>Ailin Tetes Mata</h5>
+                  <p>Rp8.600 - Rp9.000</p>
+                  <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Lihat Detail<i class="fa fa-angle-right"></i></a>
+                </div>            
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="thumb-wrapper">
+                <div class="img-box">
+                 <img class="img-fluid w-100" src={{ url_for('static', filename='/FotoObat/Mata Merah/Cendofenicol.png') }} alt="" width = "150px" height = "180px"/>
+                </div>
+                <div class="thumb-content">
+                  <h5>Cendo Fenicol</h5>
+                  <p>Rp23.700 - Rp31.200</p>
+                  <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2">Lihat Detail<i class="fa fa-angle-right"></i></a>
+                </div>            
+              </div>
+            </div>        
+            <div class="col-sm-4">
+              <div class="thumb-wrapper">
+                <div class="img-box">
+                   <img class="img-fluid w-100" src={{ url_for('static', filename='/FotoObat/Mata Merah/Insto.png') }} alt="" width = "150px" height = "180px"/>
+                </div>
+                <div class="thumb-content">
+                  <h5>Insto Reguler Eye</h5>
+                  <p>Rp15.200 - Rp23.600</p>
+                  <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal3">Lihat Detail<i class="fa fa-angle-right"></i></a>
+                </div>            
+              </div>          
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="thumb-wrapper">
+                <div class="img-box">
+                  <img class="img-fluid w-100" src={{ url_for('static', filename='/FotoObat/Mata Merah/InstoCool.png') }} alt="" width = "150px" height = "180px"/>
+                </div>
+                <div class="thumb-content">
+                  <h5>Insto Cool Eye</h5>
+                  <p>Rp14.900 - Rp18.200</p>
+                  <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal4">Lihat Detail<i class="fa fa-angle-right"></i></a>
+                </div>            
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="thumb-wrapper">
+                <div class="img-box">
+                  <img class="img-fluid w-100" src={{ url_for('static', filename='/FotoObat/Mata Merah/Rohto.png') }} alt="" width = "150px" height = "180px"/>
+                </div>
+                <div class="thumb-content">
+                  <h5>Rohto Cool Eye</h5>
+                  <p>Rp14.000 - Rp19.700</p>
+                  <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal5">Lihat Detail<i class="fa fa-angle-right"></i></a>
+                </div>            
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Carousel controls -->
+      <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+        <i class="fa fa-angle-left"></i>
+      </a>
+      <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+        <i class="fa fa-angle-right"></i>
+      </a>
+    </div>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+  <!-- Bates Obat Iritasi -->
+
+  <!-- Modal Ailin -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Detail Obat</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><i class="fa fa-close"></i></span>
+          </button>
+      </div>
+            <div class="modal-body">
+              <div class="row g-0">
+                <div class="col-md-8 border-right">
+                  <div class="status p-3">
+                    <table class="table table-borderless">
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <b><span class="heading d-block">Kategori</span></b>
+                              <span class="subheadings">Mata Merah (Iritasi)</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Komposisi</span>
+                              <span class="subheadings">Tiap ml mengandung: Tetrahydrozoline Hydrochloride (HCl) 0,5 mg dalam larutan buffer isotonis</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Rating</span>
+                              <span class="subheadings"><i class="dots"></i>5</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Dosis</span>
+                              <span class="subheadings">Teteskan 1-2 tetes pada masing - masing mata. Obat diteteskan 3-4 kali sehari, kecuali bila ada petunjuk dokter.</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Indikasi Umum</span>
+                              <span class="subheadings">Meredakan mata merah karena iritasi mata ringan.</span>
+                            </div>
+                          </td>
+                          <td>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Aturan Pakai</span>
+                              <span class="subheadings">Teteskan pada mata kanan dan kiri atau pada mata yang sakit.</span>
+                            </div>
+                          </td>  
+                          <td colspan="2">
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Deskripsi</span>
+                              <span class="subheadings">Ailin Tetes Mata merupakan obat tetes mata yang mengandung zat aktif Tetrahidrozolin HCl. Obat ini digunakan untuk mengatasi mata merah karena iritasi ringan yang disebaban oleh debu, asap, cuaca dingin, pemakaian lensa kontak, terlalu lama bekerja dengan komputer atau iritasi setelah berenang.</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <!-- <div class="d-flex flex-column">
+                              <span class="heading d-block">Direction</span>
+                              <span class="d-block subheadings">Get direction by using</span>
+                              <span class="d-flex flex-row">
+                              <img src="https://img.icons8.com/color/100/000000/google-maps.png" class="rounded" width="30" />
+                              <img src="https://img.icons8.com/color/100/000000/pittsburgh-map.png" class="rounded" width="30" />
+                              </span>
+                            </div> -->
+                          </td>  
+                          <td colspan="2">
+                            <!-- <div class="d-flex flex-column">
+                              <span class="heading d-block">Hospital Gallary</span>
+                              <span class="d-flex flex-row gallery">
+                              <img src="https://i.imgur.com/VfRSLTm.jpg" width="50" class="rounded">
+                              <img src="https://i.imgur.com/jb9Cy5h.jpg" width="50" class="rounded">
+                              <img src="https://i.imgur.com/vBUz4HA.jpg" width="50" class="rounded">
+                              </span>
+                            </div> -->
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              <div class="col-md-4">
+                <div class="p-2 text-center">
+                  <div class="profile">
+                    <img src={{ url_for('static', filename='/FotoObat/Mata Merah/Ailin.png') }} width="250" class="mx-auto d-block">
+                    <span class="d-block mt-3 font-weight-bold">Ailin Tetes Mata</span>
+                  </div>
+                  <div class="about-doctor">
+                    <table class="table table-borderless">
+                      <!-- <tbody>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Education</span>
+                              <span class="subheadings">University of Harward</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Language</span>
+                              <span class="subheadings">Spanish, English</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Organisation</span>
+                              <span class="subheadings">Accupunture</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Specialist</span>
+                              <span class="subheadings">Accupunture</span>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody> -->
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>
+</div>
+<!-- End Modal -->
+
+<!-- Modal Cendo -->
+
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Detail Obat</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><i class="fa fa-close"></i></span>
+          </button>
+      </div>
+            <div class="modal-body">
+              <div class="row g-0">
+                <div class="col-md-8 border-right">
+                  <div class="status p-3">
+                    <table class="table table-borderless">
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <b><span class="heading d-block">Kategori</span></b>
+                              <span class="subheadings">Mata Merah (Iritasi)</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Komposisi</span>
+                              <span class="subheadings">Chloramphenicol 0.25%</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Rating</span>
+                              <span class="subheadings"><i class="dots"></i>4.9</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Dosis</span>
+                              <span class="subheadings">PENGGUNAAN OBAT INI HARUS SESUAI DENGAN PETUNJUK DOKTER. Dewasa dan anak : 1-2 tetes 3 kali sehari.</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Indikasi Umum</span>
+                              <span class="subheadings">INFORMASI OBAT INI HANYA UNTUK KALANGAN MEDIS. Konjungtivitis karena infeksi bakteri gram positif dan negatif.</span>
+                            </div>
+                          </td>
+                          <td>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Aturan Pakai</span>
+                              <span class="subheadings">Teteskan pada bagian mata yang sakit.</span>
+                            </div>
+                          </td>  
+                          <td colspan="2">
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Deskripsi</span>
+                              <span class="subheadings">CENDO FENICOL 0.25% EYE DROPS adalah sediaan tetes mata antibiotik steril yang mengandung Chloramphenicol 0.25%. Chloramphenicol adalah antibiotik spektrum luas yang bersifat bakteriostatik. Obat ini efektif terhadap bakteri gram positif dan gram negatif yang aerob dan anaerob, kecuali Pseudomonas aeruginosa. Obat ini bekerja dengan cara menghambat sintesis protein bakteri.</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <!-- <div class="d-flex flex-column">
+                              <span class="heading d-block">Direction</span>
+                              <span class="d-block subheadings">Get direction by using</span>
+                              <span class="d-flex flex-row">
+                              <img src="https://img.icons8.com/color/100/000000/google-maps.png" class="rounded" width="30" />
+                              <img src="https://img.icons8.com/color/100/000000/pittsburgh-map.png" class="rounded" width="30" />
+                              </span>
+                            </div> -->
+                          </td>  
+                          <td colspan="2">
+                            <!-- <div class="d-flex flex-column">
+                              <span class="heading d-block">Hospital Gallary</span>
+                              <span class="d-flex flex-row gallery">
+                              <img src="https://i.imgur.com/VfRSLTm.jpg" width="50" class="rounded">
+                              <img src="https://i.imgur.com/jb9Cy5h.jpg" width="50" class="rounded">
+                              <img src="https://i.imgur.com/vBUz4HA.jpg" width="50" class="rounded">
+                              </span>
+                            </div> -->
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              <div class="col-md-4">
+                <div class="p-2 text-center">
+                  <div class="profile">
+                    <img src={{ url_for('static', filename='/FotoObat/Mata Merah/Cendofenicol.png') }} width="250" class="mx-auto d-block">
+                    <span class="d-block mt-3 font-weight-bold">Cendo Fenicol 0.25% Eye Drops</span>
+                  </div>
+                  <div class="about-doctor">
+                    <table class="table table-borderless">
+                      <!-- <tbody>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Education</span>
+                              <span class="subheadings">University of Harward</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Language</span>
+                              <span class="subheadings">Spanish, English</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Organisation</span>
+                              <span class="subheadings">Accupunture</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Specialist</span>
+                              <span class="subheadings">Accupunture</span>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody> -->
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>
+</div>
+
+<!-- End Cendo -->
+
+<!-- Modal Insto -->
+
+<div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Detail Obat</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><i class="fa fa-close"></i></span>
+          </button>
+      </div>
+            <div class="modal-body">
+              <div class="row g-0">
+                <div class="col-md-8 border-right">
+                  <div class="status p-3">
+                    <table class="table table-borderless">
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <b><span class="heading d-block">Kategori</span></b>
+                              <span class="subheadings">Mata Merah (Iritasi)</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Komposisi</span>
+                              <span class="subheadings">Tetrahydrozoline HCl 0.05% w/v, Benzalkonium Cl 0.01% w/v</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Rating</span>
+                              <span class="subheadings"><i class="dots"></i>5</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Dosis</span>
+                              <span class="subheadings">3-4 x sehari 2-3 tetes.</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Indikasi Umum</span>
+                              <span class="subheadings">Meredakan iritasi & kemerahan pada mata.</span>
+                            </div>
+                          </td>
+                          <td>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Aturan Pakai</span>
+                              <span class="subheadings">Diteteskan pada mata yang merah/teriritasi.</span>
+                            </div>
+                          </td>  
+                          <td colspan="2">
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Deskripsi</span>
+                              <span class="subheadings">INSTO REGULAR EYE DROP mengandung zat aktif Tetrahidrozolin HCl dan Benzalkonium Klorida, digunakan untuk mengatasi mata merah dan rasa perih akibat iritasi mata ringan yang dapat disebabkan karena asap, debu dan lainnya.</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <!-- <div class="d-flex flex-column">
+                              <span class="heading d-block">Direction</span>
+                              <span class="d-block subheadings">Get direction by using</span>
+                              <span class="d-flex flex-row">
+                              <img src="https://img.icons8.com/color/100/000000/google-maps.png" class="rounded" width="30" />
+                              <img src="https://img.icons8.com/color/100/000000/pittsburgh-map.png" class="rounded" width="30" />
+                              </span>
+                            </div> -->
+                          </td>  
+                          <td colspan="2">
+                            <!-- <div class="d-flex flex-column">
+                              <span class="heading d-block">Hospital Gallary</span>
+                              <span class="d-flex flex-row gallery">
+                              <img src="https://i.imgur.com/VfRSLTm.jpg" width="50" class="rounded">
+                              <img src="https://i.imgur.com/jb9Cy5h.jpg" width="50" class="rounded">
+                              <img src="https://i.imgur.com/vBUz4HA.jpg" width="50" class="rounded">
+                              </span>
+                            </div> -->
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              <div class="col-md-4">
+                <div class="p-2 text-center">
+                  <div class="profile">
+                    <img src={{ url_for('static', filename='/FotoObat/Mata Merah/Insto.png') }} width="250" class="mx-auto d-block">
+                    <span class="d-block mt-3 font-weight-bold">Insto Reguler Eye Drops</span>
+                  </div>
+                  <div class="about-doctor">
+                    <table class="table table-borderless">
+                      <!-- <tbody>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Education</span>
+                              <span class="subheadings">University of Harward</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Language</span>
+                              <span class="subheadings">Spanish, English</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Organisation</span>
+                              <span class="subheadings">Accupunture</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Specialist</span>
+                              <span class="subheadings">Accupunture</span>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody> -->
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>
+</div>
+
+<!-- End Insto -->
+
+<!-- Modal Insto Cool -->
+
+<div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Detail Obat</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><i class="fa fa-close"></i></span>
+          </button>
+      </div>
+            <div class="modal-body">
+              <div class="row g-0">
+                <div class="col-md-8 border-right">
+                  <div class="status p-3">
+                    <table class="table table-borderless">
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <b><span class="heading d-block">Kategori</span></b>
+                              <span class="subheadings">Mata Merah (Iritasi)</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Komposisi</span>
+                              <span class="subheadings">Naphazoline Hydrochloride 0.12 mg</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Rating</span>
+                              <span class="subheadings"><i class="dots"></i>5</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Dosis</span>
+                              <span class="subheadings">2-3 tetes pada setiap mata 3-4 kali sehari atau sesuai anjuran dokter.</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Indikasi Umum</span>
+                              <span class="subheadings">Meredakan iritasi & kemerahan pada mata.</span>
+                            </div>
+                          </td>
+                          <td>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Aturan Pakai</span>
+                              <span class="subheadings">Diteteskan pada mata yang merah atau teriritasi.</span>
+                            </div>
+                          </td>  
+                          <td colspan="2">
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Deskripsi</span>
+                              <span class="subheadings">INSTO COOL EYE DROPS mengandung Naphazoline Hydrochloride, digunakan untuk meredakan mata merah akibat iritasi ringan dengan memberikan sensasi dingin yang menyegarkan.</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <!-- <div class="d-flex flex-column">
+                              <span class="heading d-block">Direction</span>
+                              <span class="d-block subheadings">Get direction by using</span>
+                              <span class="d-flex flex-row">
+                              <img src="https://img.icons8.com/color/100/000000/google-maps.png" class="rounded" width="30" />
+                              <img src="https://img.icons8.com/color/100/000000/pittsburgh-map.png" class="rounded" width="30" />
+                              </span>
+                            </div> -->
+                          </td>  
+                          <td colspan="2">
+                            <!-- <div class="d-flex flex-column">
+                              <span class="heading d-block">Hospital Gallary</span>
+                              <span class="d-flex flex-row gallery">
+                              <img src="https://i.imgur.com/VfRSLTm.jpg" width="50" class="rounded">
+                              <img src="https://i.imgur.com/jb9Cy5h.jpg" width="50" class="rounded">
+                              <img src="https://i.imgur.com/vBUz4HA.jpg" width="50" class="rounded">
+                              </span>
+                            </div> -->
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              <div class="col-md-4">
+                <div class="p-2 text-center">
+                  <div class="profile">
+                    <img src={{ url_for('static', filename='/FotoObat/Mata Merah/InstoCool.png') }} width="250" class="mx-auto d-block">
+                    <span class="d-block mt-3 font-weight-bold">Insto Cool Eye Drops</span>
+                  </div>
+                  <div class="about-doctor">
+                    <table class="table table-borderless">
+                      <!-- <tbody>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Education</span>
+                              <span class="subheadings">University of Harward</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Language</span>
+                              <span class="subheadings">Spanish, English</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Organisation</span>
+                              <span class="subheadings">Accupunture</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Specialist</span>
+                              <span class="subheadings">Accupunture</span>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody> -->
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>
+</div>
+
+<!-- End Insto Cool -->
+
+<!-- Modal Rohto -->
+
+<div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Detail Obat</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><i class="fa fa-close"></i></span>
+          </button>
+      </div>
+            <div class="modal-body">
+              <div class="row g-0">
+                <div class="col-md-8 border-right">
+                  <div class="status p-3">
+                    <table class="table table-borderless">
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <b><span class="heading d-block">Kategori</span></b>
+                              <span class="subheadings">Mata Merah (Iritasi)</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Komposisi</span>
+                              <span class="subheadings">Nafazolin HCI 0.012%</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Rating</span>
+                              <span class="subheadings"><i class="dots"></i>4.9</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Dosis</span>
+                              <span class="subheadings">3 - 4 kali per hari teteskan 1 atau 2 tetes pada masing-masing mata.</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Indikasi Umum</span>
+                              <span class="subheadings">Meredakan sementara mata merah akibat iritasi ringan yang disebabkan debu, asap,angin, sengatan sinar matahari, pemakaian lensa kontak, alergi atau berenang.</span>
+                            </div>
+                          </td>
+                          <td>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Aturan Pakai</span>
+                              <span class="subheadings">Diberikan dengan di teteskan pada mata yang terkena iritasi.</span>
+                            </div>
+                          </td>  
+                          <td colspan="2">
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Deskripsi</span>
+                              <span class="subheadings">ROHTO COOL EYE DROP 7 ML merupakan cairan tetes mata yang digunakan untuk membantu meredakan sementara mata merah akibat iritasi ringan yang disebabkan debu, asap, angin, sengatan sinar matahari,pemakaian lensa kontak, alergi atau berenang.</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <!-- <div class="d-flex flex-column">
+                              <span class="heading d-block">Direction</span>
+                              <span class="d-block subheadings">Get direction by using</span>
+                              <span class="d-flex flex-row">
+                              <img src="https://img.icons8.com/color/100/000000/google-maps.png" class="rounded" width="30" />
+                              <img src="https://img.icons8.com/color/100/000000/pittsburgh-map.png" class="rounded" width="30" />
+                              </span>
+                            </div> -->
+                          </td>  
+                          <td colspan="2">
+                            <!-- <div class="d-flex flex-column">
+                              <span class="heading d-block">Hospital Gallary</span>
+                              <span class="d-flex flex-row gallery">
+                              <img src="https://i.imgur.com/VfRSLTm.jpg" width="50" class="rounded">
+                              <img src="https://i.imgur.com/jb9Cy5h.jpg" width="50" class="rounded">
+                              <img src="https://i.imgur.com/vBUz4HA.jpg" width="50" class="rounded">
+                              </span>
+                            </div> -->
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              <div class="col-md-4">
+                <div class="p-2 text-center">
+                  <div class="profile">
+                    <img src={{ url_for('static', filename='/FotoObat/Mata Merah/Rohto.png') }} width="250" class="mx-auto d-block">
+                    <span class="d-block mt-3 font-weight-bold">Rohto Cool Eye Drop</span>
+                  </div>
+                  <div class="about-doctor">
+                    <table class="table table-borderless">
+                      <!-- <tbody>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Education</span>
+                              <span class="subheadings">University of Harward</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Language</span>
+                              <span class="subheadings">Spanish, English</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Organisation</span>
+                              <span class="subheadings">Accupunture</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Specialist</span>
+                              <span class="subheadings">Accupunture</span>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody> -->
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>
+</div>
+
+<!-- End Rohto -->
+
+<!-- Modal Panduan -->
+<div class="modal fade" id="modalPanduan" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Panduan Mengambil Gambar</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><i class="fa fa-close"></i></span>
+          </button>
+      </div>
+            <div class="modal-body">
+              <div class="row g-0">
+                <div class="col-md-8 border-right">
+                  <div class="status p-3">
+                    <table class="table table-borderless">
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Jarak</span>
+                              <span class="subheadings">Pastikan tidak mengambil jarak yang berjauhan. Ambil gambar dengan jarak kira-kira 10-30cm</span>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Flash</span>
+                              <span class="subheadings">Bila dalam kondisi gelap, flash disarankan untuk diaktifkan agar gambar yang dihasilkan terlihat jelas</span>
+                            </div>
+                          </td>
+                          <td>
+                          </td>
+                        </tr>
+                        <tr>  
+                          <td colspan="2">
+                            <div class="d-flex flex-column">
+                              <span class="heading d-block">Kualitas</span>
+                              <span class="subheadings">Periksa ulang gambar yang telah diambil dan pastikan gambar penyakit yang diambil sudah terlihat jelas</span>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              <div class="col-md-4">
+                <div class="p-2 text-center">
+                  <div class="profile">
+                    <img src={{ url_for('static', filename='/images/pic.jpg') }} width="230" class="mx-auto d-block">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>
+</div>
+<!-- End Modal -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-info">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span>SiBangkit</span>
+          </a>
+          <p>Aplikasi untuk mendeteksi penyakit seperti diabetes, penyakit pada kulit atau mata.</p>
+          <div class="social-links d-flex mt-4">
+            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="{{ url_for('beranda') }}">Home</a></li>
+            <li><a href="{{ url_for('cariObat') }}">Cari Obat</a></li>
+            <li><a href="{{ url_for('diabetes') }}">Diabetes</a></li>
+            <li><a href="{{ url_for('kulit') }}">Kulit</a></li>
+            <li><a href="{{ url_for('mata') }}">Mata</a></li>
+            <li><a href="{{ url_for('about') }}">About Us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Source Code</h4>
+          <ul>
+            <li><a href="">GitHub</a></li>
+          </ul>
+        </div>
+
+        
+
+      </div>
+    </div>
+
+    <div class="container mt-4">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Logis</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/logis-bootstrap-logistics-website-template/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+
+  </footer><!-- End Footer -->
+  <!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src={{ url_for('static', filename='/vendor/bootstrap/js/bootstrap.bundle.min.js') }}></script>
+  <script src={{ url_for('static', filename='/vendor/purecounter/purecounter_vanilla.js') }}></script>
+  <script src={{ url_for('static', filename='/vendor/glightbox/js/glightbox.min.js') }}></script>
+  <script src={{ url_for('static', filename='/vendor/swiper/swiper-bundle.min.js') }}></script>
+  <script src={{ url_for('static', filename='/vendor/aos/aos.js') }}></script>
+  <script src={{ url_for('static', filename='/vendor/php-email-form/validate.js') }}></script>
+
+
+<!--   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script> -->
+
+  <!-- Template Main JS File -->
+  <script src={{ url_for('static', filename='/js/main.js') }}></script>
+  <!-- <script src="assets/js/main.js"></script> -->
+
+  <script src={{ url_for('static', filename='/js/client_side-cv-2.js') }}></script>
+
+  <!-- Script Modal -->
+  <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js'></script>
+  <script type='text/javascript' src='#'></script>
+  <script type='text/javascript' src='#'></script>
+  <script type='text/javascript' src='#'></script>
+  <script type='text/javascript'>#</script>
+  <script type='text/javascript'>var myLink = document.querySelector('a[href="#"]');
+  myLink.addEventListener('click', function(e) {
+  e.preventDefault();
+  });</script>
+  <!-- Script Modal -->
+
+  <!-- Script Refresh -->
+  <script type="text/javascript">
+    $(document).ready(function () {
+        $("#refresh").click(function () {
+            location.reload(true);
+        });
+    });
+  </script>
+  <!-- End -->
+
+</body>
+
+</html>
