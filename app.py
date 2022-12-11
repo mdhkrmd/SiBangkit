@@ -29,7 +29,7 @@ from io import BytesIO
 app   	= Flask(__name__, static_url_path='/static',template_folder='template')
 app2   	= Flask(__name__, static_url_path='/static',template_folder='template')
 
-app.config['MAX_CONTENT_LENGTH'] = 1024 * 1024
+app.config['MAX_CONTENT_LENGTH'] = 4032 * 4032
 app.config['UPLOAD_EXTENSIONS']  = ['.jpg','.JPG', '.jpeg', '.png']
 app.config['UPLOAD_PATH']        = './static/images/uploads/'
 
